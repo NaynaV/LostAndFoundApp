@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9B887DDD22DE93FF008E03DD /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B887DDC22DE93FF008E03DD /* logo.png */; };
+		9BF5793622E132500037C0DD /* logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9BF5793522E132500037C0DD /* logo.jpg */; };
 		EB01EB9722DCF06E006DF4ED /* userInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = EB01EB9622DCF06E006DF4ED /* userInfo.plist */; };
 		EB01EB9A22DCF34A006DF4ED /* userData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB01EB9922DCF34A006DF4ED /* userData.swift */; };
 		EB01EB9D22DCF43C006DF4ED /* String_extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB01EB9C22DCF43C006DF4ED /* String_extension.swift */; };
@@ -26,7 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9B887DDC22DE93FF008E03DD /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = ../../../Downloads/logo.png; sourceTree = "<group>"; };
+		9BF5793522E132500037C0DD /* logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = logo.jpg; path = ../../logo.jpg; sourceTree = "<group>"; };
 		EB01EB9622DCF06E006DF4ED /* userInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = userInfo.plist; sourceTree = "<group>"; };
 		EB01EB9922DCF34A006DF4ED /* userData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userData.swift; sourceTree = "<group>"; };
 		EB01EB9C22DCF43C006DF4ED /* String_extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String_extension.swift; sourceTree = "<group>"; };
@@ -94,6 +94,7 @@
 		EBC6255622D01928001C83B5 /* LostAndFoundApp */ = {
 			isa = PBXGroup;
 			children = (
+				9BF5793522E132500037C0DD /* logo.jpg */,
 				EB01EB9B22DCF423006DF4ED /* Extensions */,
 				EB01EB9822DCF32A006DF4ED /* Swift files */,
 				EBC6255722D01928001C83B5 /* AppDelegate.swift */,
@@ -102,7 +103,6 @@
 				EBC6255B22D01928001C83B5 /* Main.storyboard */,
 				EBF1831922D2DCF500EC112D /* addLostItemViewController.swift */,
 				EBC6255E22D0192A001C83B5 /* Assets.xcassets */,
-				9B887DDC22DE93FF008E03DD /* logo.png */,
 				EBC6256322D0192A001C83B5 /* Info.plist */,
 				EBC6256022D0192A001C83B5 /* LaunchScreen.storyboard */,
 				EBC6256B22D02021001C83B5 /* SignupViewController.swift */,
@@ -172,7 +172,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBC6256222D0192A001C83B5 /* LaunchScreen.storyboard in Resources */,
-				9B887DDD22DE93FF008E03DD /* logo.png in Resources */,
+				9BF5793622E132500037C0DD /* logo.jpg in Resources */,
 				EBC6255F22D0192A001C83B5 /* Assets.xcassets in Resources */,
 				EBC6255D22D01928001C83B5 /* Main.storyboard in Resources */,
 				EB01EB9722DCF06E006DF4ED /* userInfo.plist in Resources */,
