@@ -166,7 +166,7 @@ class addFoundItemViewController: UIViewController, UIImagePickerControllerDeleg
         self.present(nextVC, animated: true, completion: nil)
         
     }
-    @IBAction func btn_saveLostItem(_ sender: UIButton)
+    @IBAction func btn_saveFoundItem(_ sender: UIButton)
     {
         
         

@@ -84,7 +84,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-220.28985507246378" y="28.794642857142854"/>
+            <point key="canvasLocation" x="-943" y="-702"/>
         </scene>
         <!--Show All Lost Items View Controller-->
         <scene sceneID="TJ7-dX-1AY">
@@ -551,7 +551,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vRi-fe-LEu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="531.8840579710145" y="28.794642857142854"/>
+            <point key="canvasLocation" x="407" y="-1385"/>
         </scene>
     </scenes>
     <resources>
