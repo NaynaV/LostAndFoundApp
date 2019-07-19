@@ -221,7 +221,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uU9-lJ-qrD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1244.9275362318842" y="28.794642857142854"/>
+            <point key="canvasLocation" x="706" y="-155"/>
         </scene>
         <!--Add Lost Item View Controller-->
         <scene sceneID="KkM-MG-aGD">
@@ -303,6 +303,13 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Reward" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n74-pU-HfQ">
+                                <rect key="frame" x="117" y="537" width="141" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Iwo-K9-17O"/>
@@ -317,11 +324,12 @@
                         <outlet property="txt_hint" destination="io7-DN-cNk" id="hMM-eb-mMb"/>
                         <outlet property="txt_itemName" destination="azq-fl-ZFq" id="c6q-aV-K6T"/>
                         <outlet property="txt_place" destination="9dW-KS-soZ" id="Zmw-RQ-qcz"/>
+                        <outlet property="txt_reward" destination="n74-pU-HfQ" id="ikb-M0-PaX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yd2-pD-TbQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1953.6231884057972" y="28.794642857142854"/>
+            <point key="canvasLocation" x="1600.0000000000002" y="-181.47321428571428"/>
         </scene>
         <!--Add Found Item View Controller-->
         <scene sceneID="Mdg-ge-dsP">
