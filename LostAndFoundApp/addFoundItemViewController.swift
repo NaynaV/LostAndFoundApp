@@ -1,17 +1,25 @@
 //
-//  addLostItemViewController.swift
+//  addFoundItemViewController.swift
 //  LostAndFoundApp
 //
-//  Created by Nayna on 7/7/19.
+//  Created by MacStudent on 2019-07-18.
 //  Copyright © 2019 Nayna. All rights reserved.
 //
 
 import UIKit
 
-class addLostItemViewController: UIViewController,UIImagePickerControllerDelegate,UIActionSheetDelegate, UIAlertViewDelegate,UINavigationBarDelegate,UINavigationControllerDelegate, UIPickerViewDataSource, UIPickerViewDelegate
+class addFoundItemViewController: UIViewController, UIImagePickerControllerDelegate,UIActionSheetDelegate, UIAlertViewDelegate,UINavigationBarDelegate,UINavigationControllerDelegate, UIPickerViewDataSource, UIPickerViewDelegate
 {
-    
 
+    @IBOutlet weak var txt_category: UITextField!
+    @IBOutlet weak var txt_itemName: UITextField!
+    @IBOutlet weak var txt_place: UITextField!
+    @IBOutlet weak var txt_dateFoundItem: UITextField!
+    @IBOutlet weak var txt_hint: UITextField!
+    @IBOutlet weak var hint_image: UIImageView!
+    var imageFlag : Bool = false
+    @IBOutlet weak var categoryPicker: UIPickerView!
+    
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
@@ -20,20 +28,8 @@ class addLostItemViewController: UIViewController,UIImagePickerControllerDelegat
         return category.count
     }
     
+
     
-    @IBOutlet weak var txt_itemName: UITextField!
-    @IBOutlet weak var txt_category: UITextField!
-    
-    @IBOutlet weak var txt_place: UITextField!
-    
-    @IBOutlet weak var txt_dateLostItem: UITextField!
-    @IBOutlet weak var txt_reward: UITextField!
-    @IBOutlet weak var txt_description: UITextField!
-    
-    @IBOutlet weak var img_item: UIImageView!
-     var imageFlag : Bool = false
-    
-    @IBOutlet weak var categoryPicker: UIPickerView!
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return category[row]
     }
@@ -41,11 +37,11 @@ class addLostItemViewController: UIViewController,UIImagePickerControllerDelegat
     var img_dataDic = NSMutableDictionary()
     var parameterDic = NSMutableDictionary()
     var img_data = NSData()
-      var category = ["General", "Electronic", "Materialistic"]
+    var category = ["General", "Electronic", "Materialistic"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background1")!)
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background1")!)
         imageController.delegate = self
         categoryPicker.dataSource = self
         categoryPicker.delegate = self
@@ -54,7 +50,7 @@ self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background1")!
     
     @IBAction func btn_imagePick(_ sender: Any)
     {
-    
+        
         self.view.endEditing(true)
         
         let optionMenu = UIAlertController(title: nil, message: "Choose Image", preferredStyle: .actionSheet)
@@ -119,62 +115,74 @@ self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background1")!
         self.present(optionMenu, animated: true, completion: nil)
         
     }
-   
-    /*
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
-        let image = info[UIImagePickerControllerOriginalImage] as! UIImage
-        img_item.image = image
-        dismiss(animated:true, completion: nil)
-    }
-    /*
-    private func imagePickerController(picker: UIImagePickerController,didFinishPickingMediaWithInfo info: [NSObject : AnyObject])
-    {
-        imageController.dismiss(animated: true, completion: nil)
-        
-        //        var imag_var =  info[UIImagePickerControllerOriginalImage] as! UIImage
-        
-        
-        
-        
-        //        img_data = UIImagePNGRepresentation(imag_var)!
-        //        print(img_data)
-        
-        
-        let imag_var =  info[UIImagePickerControllerOriginalImage] as! UIImage
-        img_item.contentMode = .scaleToFill
-        img_item.image = imag_var
-        img_data = UIImagePNGRepresentation(imag_var)!
-        img_dataDic.setObject(img_data, forKey: "isImageupload" as NSCopying)
-        imageFlag = true
-        //         btn_upldimg.setBackgroundImage(imag_var, forState: UIControlState.Normal)
-        
-        
-        
-    }
     
-  */
-    func imagePickerControllerDidCancel(_ picker: UIImagePickerController)
-    {
-        imageController.dismiss(animated: true, completion: nil)
-    }
-    
-    */
+    /*
+     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+     let image = info[UIImagePickerControllerOriginalImage] as! UIImage
+     img_item.image = image
+     dismiss(animated:true, completion: nil)
+     }
+     /*
+     private func imagePickerController(picker: UIImagePickerController,didFinishPickingMediaWithInfo info: [NSObject : AnyObject])
+     {
+     imageController.dismiss(animated: true, completion: nil)
+     
+     //        var imag_var =  info[UIImagePickerControllerOriginalImage] as! UIImage
+     
+     
+     
+     
+     //        img_data = UIImagePNGRepresentation(imag_var)!
+     //        print(img_data)
+     
+     
+     let imag_var =  info[UIImagePickerControllerOriginalImage] as! UIImage
+     img_item.contentMode = .scaleToFill
+     img_item.image = imag_var
+     img_data = UIImagePNGRepresentation(imag_var)!
+     img_dataDic.setObject(img_data, forKey: "isImageupload" as NSCopying)
+     imageFlag = true
+     //         btn_upldimg.setBackgroundImage(imag_var, forState: UIControlState.Normal)
+     
+     
+     
+     }
+     
+     */
+     func imagePickerControllerDidCancel(_ picker: UIImagePickerController)
+     {
+     imageController.dismiss(animated: true, completion: nil)
+     }
+     
+     */
     
     
     
     
     @IBAction func btn_back(_ sender: Any) {
-    
+        
         let myStoryBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let nextVC = myStoryBoard.instantiateViewController(withIdentifier: "loginVC") as! LoginViewController
         self.present(nextVC, animated: true, completion: nil)
-    
+        
     }
     @IBAction func btn_saveLostItem(_ sender: UIButton)
     {
-    
-    
+        
+        
     }
     
     
 }
+
+
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+    }
+    */
+

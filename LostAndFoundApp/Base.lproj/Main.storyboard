@@ -263,13 +263,6 @@
                                 <rect key="frame" x="95" y="116" width="193" height="166"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Description" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="io7-DN-cNk">
-                                <rect key="frame" x="117" y="538" width="155" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lP9-bX-tvn">
                                 <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
@@ -291,13 +284,6 @@
                                     <action selector="btn_saveLostItem:" destination="EZV-hm-Rqq" eventType="touchUpInside" id="7t5-WN-KZs"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Reward" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EhR-92-O6Z">
-                                <rect key="frame" x="117" y="480" width="155" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TRR-Kt-a0d">
                                 <rect key="frame" x="95" y="116" width="193" height="166"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -310,6 +296,13 @@
                                 <rect key="frame" x="37" y="609" width="363" height="184"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             </pickerView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Description" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="io7-DN-cNk">
+                                <rect key="frame" x="117" y="480" width="155" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Iwo-K9-17O"/>
@@ -317,17 +310,107 @@
                     <connections>
                         <outlet property="categoryPicker" destination="7iM-Ky-0s1" id="7eD-hG-EHq"/>
                         <outlet property="img_item" destination="I63-vm-uBE" id="jDl-LV-cAQ"/>
-                        <outlet property="txt_category" destination="2Dd-mb-TNm" id="4B9-z5-92C"/>
+                        <outlet property="txt_category" destination="2Dd-mb-TNm" id="ETU-av-z2W"/>
                         <outlet property="txt_dateLostItem" destination="WbN-1H-nNm" id="vPE-jz-chc"/>
+                        <outlet property="txt_datefound" destination="WbN-1H-nNm" id="N1f-e8-QmV"/>
                         <outlet property="txt_description" destination="io7-DN-cNk" id="0bu-zj-ZId"/>
-                        <outlet property="txt_itemName" destination="azq-fl-ZFq" id="Wjc-Fh-UzO"/>
-                        <outlet property="txt_place" destination="9dW-KS-soZ" id="6dl-EU-dJp"/>
-                        <outlet property="txt_reward" destination="EhR-92-O6Z" id="F6y-2c-DaZ"/>
+                        <outlet property="txt_hint" destination="io7-DN-cNk" id="hMM-eb-mMb"/>
+                        <outlet property="txt_itemName" destination="azq-fl-ZFq" id="c6q-aV-K6T"/>
+                        <outlet property="txt_place" destination="9dW-KS-soZ" id="Zmw-RQ-qcz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yd2-pD-TbQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1953.6231884057972" y="28.794642857142854"/>
+        </scene>
+        <!--Add Found Item View Controller-->
+        <scene sceneID="Mdg-ge-dsP">
+            <objects>
+                <viewController id="Q3S-ni-5gt" customClass="addFoundItemViewController" customModule="LostAndFoundApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hWs-e6-EcC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Item Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Ax-wS-RBu">
+                                <rect key="frame" x="130" y="321" width="155" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Place " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TiQ-uM-fyd">
+                                <rect key="frame" x="130" y="366" width="155" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Date" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AgQ-vY-0ka">
+                                <rect key="frame" x="130" y="411" width="155" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Category" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xXE-5F-82b">
+                                <rect key="frame" x="130" y="275" width="155" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="txt_category:" destination="Q3S-ni-5gt" eventType="editingDidEnd" id="Sn9-Jh-s1z"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Hint" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XQU-G4-8Mm">
+                                <rect key="frame" x="130" y="467" width="155" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1aI-Mm-vHW">
+                                <rect key="frame" x="360" y="71" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="btn_saveLostItem:" destination="EZV-hm-Rqq" eventType="touchUpInside" id="fOd-Ob-plK"/>
+                                </connections>
+                            </button>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oK7-lV-P7f">
+                                <rect key="frame" x="31" y="586" width="363" height="184"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3BP-F9-rcF">
+                                <rect key="frame" x="116" y="87" width="193" height="166"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Pick"/>
+                                <connections>
+                                    <action selector="btn_imagePick:" destination="EZV-hm-Rqq" eventType="touchUpInside" id="eXi-Dg-EM6"/>
+                                    <action selector="btn_imagePick:" destination="Q3S-ni-5gt" eventType="touchUpInside" id="mJo-x6-1Sg"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u4p-kF-0FG">
+                                <rect key="frame" x="111" y="87" width="193" height="166"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="wQu-0z-R4l"/>
+                    </view>
+                    <connections>
+                        <outlet property="categoryPicker" destination="oK7-lV-P7f" id="rs4-Zy-I2t"/>
+                        <outlet property="hint_image" destination="u4p-kF-0FG" id="Gyq-La-mHW"/>
+                        <outlet property="txt_category" destination="xXE-5F-82b" id="MKg-JD-yEG"/>
+                        <outlet property="txt_dateFoundItem" destination="AgQ-vY-0ka" id="Cff-DI-8j1"/>
+                        <outlet property="txt_hint" destination="XQU-G4-8Mm" id="omW-M8-LJT"/>
+                        <outlet property="txt_itemName" destination="8Ax-wS-RBu" id="Fq2-8g-MtU"/>
+                        <outlet property="txt_place" destination="TiQ-uM-fyd" id="YTI-ii-0oi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="78G-Qu-t2k" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2686.9565217391305" y="28.794642857142854"/>
         </scene>
         <!--Demo View Controller-->
         <scene sceneID="IEp-HT-9Rm">
@@ -392,7 +475,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="orj-Ff-QTN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2856.521739130435" y="-15.401785714285714"/>
+            <point key="canvasLocation" x="3449" y="29"/>
         </scene>
         <!--Menu View Controller-->
         <scene sceneID="koy-fs-zgH">

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9BF5793622E132500037C0DD /* logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9BF5793522E132500037C0DD /* logo.jpg */; };
+		9BF5793822E13C690037C0DD /* addFoundItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF5793722E13C690037C0DD /* addFoundItemViewController.swift */; };
 		EB01EB9722DCF06E006DF4ED /* userInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = EB01EB9622DCF06E006DF4ED /* userInfo.plist */; };
 		EB01EB9A22DCF34A006DF4ED /* userData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB01EB9922DCF34A006DF4ED /* userData.swift */; };
 		EB01EB9D22DCF43C006DF4ED /* String_extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB01EB9C22DCF43C006DF4ED /* String_extension.swift */; };
@@ -27,6 +28,7 @@
 
 /* Begin PBXFileReference section */
 		9BF5793522E132500037C0DD /* logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = logo.jpg; path = ../../logo.jpg; sourceTree = "<group>"; };
+		9BF5793722E13C690037C0DD /* addFoundItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addFoundItemViewController.swift; sourceTree = "<group>"; };
 		EB01EB9622DCF06E006DF4ED /* userInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = userInfo.plist; sourceTree = "<group>"; };
 		EB01EB9922DCF34A006DF4ED /* userData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userData.swift; sourceTree = "<group>"; };
 		EB01EB9C22DCF43C006DF4ED /* String_extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String_extension.swift; sourceTree = "<group>"; };
@@ -94,21 +96,22 @@
 		EBC6255622D01928001C83B5 /* LostAndFoundApp */ = {
 			isa = PBXGroup;
 			children = (
-				9BF5793522E132500037C0DD /* logo.jpg */,
 				EB01EB9B22DCF423006DF4ED /* Extensions */,
 				EB01EB9822DCF32A006DF4ED /* Swift files */,
 				EBC6255722D01928001C83B5 /* AppDelegate.swift */,
 				EBC6256922D01FE1001C83B5 /* MenuViewController.swift */,
 				EBC6255922D01928001C83B5 /* LoginViewController.swift */,
 				EBC6255B22D01928001C83B5 /* Main.storyboard */,
-				EBF1831922D2DCF500EC112D /* addLostItemViewController.swift */,
 				EBC6255E22D0192A001C83B5 /* Assets.xcassets */,
+				9BF5793522E132500037C0DD /* logo.jpg */,
 				EBC6256322D0192A001C83B5 /* Info.plist */,
 				EBC6256022D0192A001C83B5 /* LaunchScreen.storyboard */,
 				EBC6256B22D02021001C83B5 /* SignupViewController.swift */,
 				EB7D450A22DA63A800FD69B2 /* demoViewController.swift */,
 				EB01EB9622DCF06E006DF4ED /* userInfo.plist */,
 				EB01EBA222DD01BD006DF4ED /* ShowAllLostItemsViewController.swift */,
+				EBF1831922D2DCF500EC112D /* addLostItemViewController.swift */,
+				9BF5793722E13C690037C0DD /* addFoundItemViewController.swift */,
 			);
 			path = LostAndFoundApp;
 			sourceTree = "<group>";
@@ -190,6 +193,7 @@
 				EBC6255A22D01928001C83B5 /* LoginViewController.swift in Sources */,
 				EB01EB9F22DCF7C3006DF4ED /* Item.swift in Sources */,
 				EBC6256A22D01FE1001C83B5 /* MenuViewController.swift in Sources */,
+				9BF5793822E13C690037C0DD /* addFoundItemViewController.swift in Sources */,
 				EBC6256C22D02021001C83B5 /* SignupViewController.swift in Sources */,
 				EB01EB9A22DCF34A006DF4ED /* userData.swift in Sources */,
 				EB01EB9D22DCF43C006DF4ED /* String_extension.swift in Sources */,
