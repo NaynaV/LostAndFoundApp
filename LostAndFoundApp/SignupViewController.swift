@@ -10,6 +10,7 @@ import UIKit
 
 class SignupViewController: UIViewController, UINavigationBarDelegate,UINavigationControllerDelegate,UITextFieldDelegate,UIActionSheetDelegate{
 
+    
     @IBOutlet weak var txt_firstName: UITextField!
     @IBOutlet weak var txt_lastName: UITextField!
     
