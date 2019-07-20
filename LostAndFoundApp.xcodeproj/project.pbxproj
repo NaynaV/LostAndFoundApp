@@ -22,6 +22,8 @@
 		EBC6256A22D01FE1001C83B5 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC6256922D01FE1001C83B5 /* MenuViewController.swift */; };
 		EBC6256C22D02021001C83B5 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC6256B22D02021001C83B5 /* SignupViewController.swift */; };
 		EBEF8F7022E3925B00E63840 /* ItemData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEF8F6F22E3925B00E63840 /* ItemData.swift */; };
+		EBEF8F7222E394DA00E63840 /* LostItem.plist in Resources */ = {isa = PBXBuildFile; fileRef = EBEF8F7122E394DA00E63840 /* LostItem.plist */; };
+		EBEF8F7422E397B200E63840 /* ShowLostItemsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEF8F7322E397B200E63840 /* ShowLostItemsTableViewCell.swift */; };
 		EBF1831A22D2DCF500EC112D /* addLostItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF1831922D2DCF500EC112D /* addLostItemViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +45,8 @@
 		EBC6256922D01FE1001C83B5 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		EBC6256B22D02021001C83B5 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		EBEF8F6F22E3925B00E63840 /* ItemData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemData.swift; sourceTree = "<group>"; };
+		EBEF8F7122E394DA00E63840 /* LostItem.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = LostItem.plist; sourceTree = "<group>"; };
+		EBEF8F7322E397B200E63840 /* ShowLostItemsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowLostItemsTableViewCell.swift; sourceTree = "<group>"; };
 		EBF1831922D2DCF500EC112D /* addLostItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addLostItemViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -109,6 +113,8 @@
 				EBF1831922D2DCF500EC112D /* addLostItemViewController.swift */,
 				9BF5793722E13C690037C0DD /* addFoundItemViewController.swift */,
 				EBEF8F6F22E3925B00E63840 /* ItemData.swift */,
+				EBEF8F7122E394DA00E63840 /* LostItem.plist */,
+				EBEF8F7322E397B200E63840 /* ShowLostItemsTableViewCell.swift */,
 			);
 			path = LostAndFoundApp;
 			sourceTree = "<group>";
@@ -174,6 +180,7 @@
 				EBC6256222D0192A001C83B5 /* LaunchScreen.storyboard in Resources */,
 				EBC6255F22D0192A001C83B5 /* Assets.xcassets in Resources */,
 				EBC6255D22D01928001C83B5 /* Main.storyboard in Resources */,
+				EBEF8F7222E394DA00E63840 /* LostItem.plist in Resources */,
 				EB01EB9722DCF06E006DF4ED /* userInfo.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -195,6 +202,7 @@
 				EB01EB9A22DCF34A006DF4ED /* userData.swift in Sources */,
 				EB01EB9D22DCF43C006DF4ED /* String_extension.swift in Sources */,
 				EBF1831A22D2DCF500EC112D /* addLostItemViewController.swift in Sources */,
+				EBEF8F7422E397B200E63840 /* ShowLostItemsTableViewCell.swift in Sources */,
 				EBC6255822D01928001C83B5 /* AppDelegate.swift in Sources */,
 				EB7D450B22DA63A800FD69B2 /* demoViewController.swift in Sources */,
 			);

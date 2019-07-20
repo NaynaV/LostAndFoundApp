@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+/*
 enum ItemType {
     case Lost , Found
 }
@@ -47,4 +47,14 @@ class Item
         self.itemType = itemType
         
     }
+}
+*/
+
+
+struct Item {
+    var ItemId: Int
+    var ItemName: String
+    var ItemDescription: String
+    var ItemCat : String
+    var ItemType : String
 }

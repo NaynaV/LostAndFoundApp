@@ -10,10 +10,10 @@ import UIKit
 
 class ShowAllLostItemsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    
+    //var students = [Student]()
 
     
-    var ItemArray = Array<Item>()
+    var ItemArray = [Item]()
     
     @IBOutlet weak var tbl_showLostItems: UITableView!
     
@@ -27,7 +27,7 @@ class ShowAllLostItemsViewController: UIViewController, UITableViewDelegate, UIT
     self.tbl_showLostItems.delegate = self
     self.tbl_showLostItems.dataSource = self
   //  tbl_showLostItems.register(UITableViewCell.self, forCellReuseIdentifier: "cellLostItems")
-    
+    readStudentInfoPlistFile()
 
     }
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -36,27 +36,53 @@ class ShowAllLostItemsViewController: UIViewController, UITableViewDelegate, UIT
     
    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
    {
-       // return ItemArray.count
-    return ItemArray.count
+       //   return self.students.count
+    return self.ItemArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cellLostItems", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cellLostItems") as! ShowLostItemsTableViewCell
+        let showItem = self.ItemArray[indexPath.row]
         
-      //  print("\(#function) --- section = \(indexPath.section), row = \(indexPath.row)")
-        var details = ""
+        cell.lbl_itemId.text = "Item Id :\(showItem.ItemId)"
+        cell.lbl_ItemName.text = "Item Name :\(showItem.ItemName)"
+        cell.lbl_itemCat.text = "Item Category :\(showItem.ItemCat)"
+        cell.lbl_itemDes.text = "Item Description :\(showItem.ItemDescription)"
+        cell.lbl_itemType.text = "Item Type :\(showItem.ItemType)"
         
-        cell.textLabel?.text = ItemArray[indexPath.row].itemId
-         cell.textLabel?.text = ItemArray[indexPath.row].itemName
-         cell.textLabel?.text = ItemArray[indexPath.row].itemCategory
-         cell.textLabel?.text = ItemArray[indexPath.row].description
-      
-        
+       
         
         return cell
         
     }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return CGFloat(400)
+    }
   
-
+    func readStudentInfoPlistFile()
+    {
+        if let plist = Bundle.main.path(forResource: "LostItem", ofType: "plist")
+        {
+            if let dict = NSDictionary(contentsOfFile: plist)
+            {
+                if let showItems = dict["Items"] as? [[String:Any]]
+                {
+                    for showItem in showItems
+                    {
+                        let itemId = showItem["ItemId"] as! Int
+                        let itemName = showItem["ItemName"] as! String
+                        let itemCat = showItem["ItemCat"] as! String
+                        let itemDes = showItem["ItemDescription"] as! String
+                        let itemType = showItem["ItemType"] as! String
+                        
+                        self.ItemArray.append(Item(ItemId: itemId, ItemName: itemName, ItemDescription: itemDes, ItemCat: itemCat, ItemType: itemType))
+                        
+                        self.tbl_showLostItems.reloadData()
+                    }
+                }
+            }
+        }
+    }
 }
