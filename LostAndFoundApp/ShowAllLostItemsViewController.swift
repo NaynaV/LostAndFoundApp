@@ -13,24 +13,49 @@ class ShowAllLostItemsViewController: UIViewController, UITableViewDelegate, UIT
     
 
     
+    var ItemArray = Array<Item>()
     
     @IBOutlet weak var tbl_showLostItems: UITableView!
     
-   @IBOutlet weak var cell_showLostItems: UITableView!
+  
     
     
    override func viewDidLoad() {
         super.viewDidLoad()
+    
+    
+    self.tbl_showLostItems.delegate = self
+    self.tbl_showLostItems.dataSource = self
+  //  tbl_showLostItems.register(UITableViewCell.self, forCellReuseIdentifier: "cellLostItems")
+    
 
-        // Do any additional setup after loading the view.
+    }
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
     }
     
-   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    //    <#code#>
+   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+   {
+       // return ItemArray.count
+    return ItemArray.count
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-     //   <#code#>
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
+    {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cellLostItems", for: indexPath)
+        
+      //  print("\(#function) --- section = \(indexPath.section), row = \(indexPath.row)")
+        var details = ""
+        
+        cell.textLabel?.text = ItemArray[indexPath.row].itemId
+         cell.textLabel?.text = ItemArray[indexPath.row].itemName
+         cell.textLabel?.text = ItemArray[indexPath.row].itemCategory
+         cell.textLabel?.text = ItemArray[indexPath.row].description
+      
+        
+        
+        return cell
+        
     }
   
 

@@ -14,34 +14,37 @@ enum ItemType {
 
 class Item
 {
-    var itemId: Int
+    var itemId: String
     var itemCategory: String
     var itemType : ItemType
     var itemName: String
     var description: String
     //
-    var date : String
+    var date : Date
     var image  : String
+    
+    var ItemArray:[Item] = [Item]()
     
     init()
     {
-        self.itemId = Int()
+        self.itemId = String()
         self.itemCategory = String()
         self.itemType = ItemType.Found
         self.itemName = String()
         self.description = String()
-        self.date = String()
+        self.date = Date()
         self.image = String()
     }
     
-    init(itemID:Int, itemCategory : String, itemType : ItemType , itemName :String, description : String , date : String , image : String)
+    init(itemID:String, itemCategory : String, itemType : ItemType , itemName :String, description : String , date : Date , image : String)
     {
         self.itemId = itemID
         self.itemCategory = itemCategory
         self.itemName = itemName
         self.description = description
-        self.date = date
+        self.date = Date()
         self.image = image
         self.itemType = itemType
+        
     }
 }

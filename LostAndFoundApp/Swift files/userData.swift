@@ -8,20 +8,40 @@
 
 import Foundation
 
-class UsersStruct {
+/*
+struct name {
+    <#fields#>
+} UsersStruct {
     // let userID : Int
+    //var userName : String
+    //var customerLName : String
+    var email : String = ""
+    var password : String = ""
+   // var listOfItems : Item
+    
+   // static var usersListOfItems = [UsersStruct]()
+    
+   /* var fullName : String{
+     return "\(customerFName ) \(customerLName)"
+     }
+    init(email :String, password : String, listOfItems : Item)
+    {
+        self.email = email
+        self.password = password
+        self.listOfItems = Item
+    }
+ 
+}
+
+*/
+ */
+struct UsersStruct {
+  //  let userID : Int
     //var userName : String
     //var customerLName : String
     var email : String
     var password : String
-    var listOfItems : Item
     
-    static var usersListOfItems = [UsersStruct]()
-    
-    init()
-    {
-        
-    }
     /*  var fullName : String{
      return "\(customerFName ) \(customerLName)"
      }*/

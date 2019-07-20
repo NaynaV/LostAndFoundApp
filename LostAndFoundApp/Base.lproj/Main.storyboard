@@ -99,7 +99,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="cellLostItems" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="178" id="K3B-bc-8ez">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="cellLostItems" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellLostItems" rowHeight="178" id="K3B-bc-8ez">
                                         <rect key="frame" x="0.0" y="28" width="414" height="178"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="K3B-bc-8ez" id="mBo-vY-KzI">
@@ -114,7 +114,6 @@
                         <viewLayoutGuide key="safeArea" id="qMM-38-8zZ"/>
                     </view>
                     <connections>
-                        <outlet property="cell_showLostItems" destination="KQc-57-Yr8" id="xoC-M2-jA2"/>
                         <outlet property="tbl_showLostItems" destination="KQc-57-Yr8" id="3eZ-3r-5tm"/>
                     </connections>
                 </viewController>
