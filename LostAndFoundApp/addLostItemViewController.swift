@@ -12,14 +12,7 @@ class addLostItemViewController: UIViewController,UIImagePickerControllerDelegat
 {
     
 
-    func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        return 1
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return category.count
-    }
-    
+   
     
     @IBOutlet weak var txt_itemName: UITextField!
     @IBOutlet weak var txt_category: UITextField!
@@ -34,18 +27,24 @@ class addLostItemViewController: UIViewController,UIImagePickerControllerDelegat
      var imageFlag : Bool = false
     
     @IBOutlet weak var categoryPicker: UIPickerView!
-    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return category[row]
-    }
+ 
+  
     var imageController = UIImagePickerController()
     var img_dataDic = NSMutableDictionary()
     var parameterDic = NSMutableDictionary()
     var img_data = NSData()
-      var category = ["General", "Electronic", "Materialistic"]
+      //var category = ["General", "Electronic", "Materialistic"]
+    
+    
+
+    let category = [String](arrayLiteral: "Peter", "Jane", "Paul", "Mary", "Kevin", "Lucy")
     
     override func viewDidLoad() {
         super.viewDidLoad()
 self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background1")!)
+        
+        txt_category.inputView = categoryPicker
+        
         imageController.delegate = self
         categoryPicker.dataSource = self
         categoryPicker.delegate = self
@@ -160,7 +159,23 @@ self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background1")!
     
     */
     
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
     
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return category.count
+    }
+    
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return category[row]
+    }
+    
+    
+    func pickerView( pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        self.txt_category.text = category[row]
+    }
     
     
     @IBAction func btn_back(_ sender: Any) {

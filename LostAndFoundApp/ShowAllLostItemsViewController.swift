@@ -8,30 +8,30 @@
 
 import UIKit
 
-//class ShowAllLostItemsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class ShowAllLostItemsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     
 
     
     
-    //@IBOutlet weak var tbl_showLostItems: UITableView!
+    @IBOutlet weak var tbl_showLostItems: UITableView!
     
-   // @IBOutlet weak var cell_showLostItems: UITableView!
+   @IBOutlet weak var cell_showLostItems: UITableView!
     
     
- //   override func viewDidLoad() {
-    //    super.viewDidLoad()
+   override func viewDidLoad() {
+        super.viewDidLoad()
 
         // Do any additional setup after loading the view.
- //   }
+    }
     
-  //  func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     //    <#code#>
-    //}
+    }
     
-   // func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
      //   <#code#>
-    //}
+    }
   
 
-//}
+}

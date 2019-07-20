@@ -8,13 +8,20 @@
 
 import Foundation
 
-struct UsersStruct {
-   // let userID : Int
+class UsersStruct {
+    // let userID : Int
     //var userName : String
     //var customerLName : String
     var email : String
     var password : String
+    var listOfItems : Item
     
+    static var usersListOfItems = [UsersStruct]()
+    
+    init()
+    {
+        
+    }
     /*  var fullName : String{
      return "\(customerFName ) \(customerLName)"
      }*/

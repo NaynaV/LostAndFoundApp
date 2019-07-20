@@ -319,9 +319,7 @@
                         <outlet property="img_item" destination="I63-vm-uBE" id="jDl-LV-cAQ"/>
                         <outlet property="txt_category" destination="2Dd-mb-TNm" id="ETU-av-z2W"/>
                         <outlet property="txt_dateLostItem" destination="WbN-1H-nNm" id="vPE-jz-chc"/>
-                        <outlet property="txt_datefound" destination="WbN-1H-nNm" id="N1f-e8-QmV"/>
                         <outlet property="txt_description" destination="io7-DN-cNk" id="0bu-zj-ZId"/>
-                        <outlet property="txt_hint" destination="io7-DN-cNk" id="hMM-eb-mMb"/>
                         <outlet property="txt_itemName" destination="azq-fl-ZFq" id="c6q-aV-K6T"/>
                         <outlet property="txt_place" destination="9dW-KS-soZ" id="Zmw-RQ-qcz"/>
                         <outlet property="txt_reward" destination="n74-pU-HfQ" id="ikb-M0-PaX"/>
