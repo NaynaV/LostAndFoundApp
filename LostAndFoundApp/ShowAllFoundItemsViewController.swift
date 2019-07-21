@@ -8,9 +8,11 @@
 
 import UIKit
 
-class ShowAllFoundItemsViewController: UIViewController {
+class ShowAllFoundItemsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
+  
 
-   
+    @IBOutlet weak var tbl_FoundItems: UITableView!
+    
     var foundItemArray: [FoundItem]!
     
     
@@ -22,19 +24,39 @@ class ShowAllFoundItemsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+self.tbl_FoundItems.delegate = self
+        self.tbl_FoundItems.dataSource = self
+        getFoundItemData()
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    private func getFoundItemData()
+    {
+        foundItemArray = []
+        foundItemArray.append(FoundItem(fItemName: "key", fItemCat: "Personal", fItemDes: "shhsd", fItemDate: "dsds"))
+       foundItemArray.append(FoundItem(fItemName: "Bottel", fItemCat: "Home", fItemDes: "water blue bttel", fItemDate: "sfdss"))
+        
     }
-    */
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.foundItemArray.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let fItemCell = tableView.dequeueReusableCell(withIdentifier: "ShowFoundItemCell") as! ShowFoundItemTableViewCell
+        
+        let foundItem = self.foundItemArray[indexPath.row]
+    fItemCell.lbl_fItemName.text = foundItem.fItemName
+        fItemCell.lbl_fItemCat.text = foundItem.fItemCat
+        fItemCell.lbl_fItemDes.text = foundItem.fItemDes
+        fItemCell.lbl_fItemDate.text = foundItem.fItemDate
+        return fItemCell
+        
+        
+       
+    }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 130.0
+    }
 
 }

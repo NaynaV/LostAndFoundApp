@@ -66,5 +66,11 @@ class MenuViewController: UIViewController {
     }
     
     
+    @IBAction func btn_showFoundItems(_ sender: UIButton)
+    {
+        let myStoryBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let nextVC = myStoryBoard.instantiateViewController(withIdentifier: "ShowFoundItemVC") as! ShowAllFoundItemsViewController
+        self.present(nextVC, animated: true, completion: nil)
+    }
     
 }

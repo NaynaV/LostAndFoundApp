@@ -12,5 +12,5 @@ struct FoundItem {
     var fItemName : String
     var fItemCat : String
     var fItemDes : String
-    var fItemDate : Date
+    var fItemDate : String
 }
