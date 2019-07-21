@@ -7,10 +7,10 @@
 //
 
 import UIKit
+import MobileCoreServices
 
 class addLostItemViewController: UIViewController,UIImagePickerControllerDelegate,UIActionSheetDelegate, UIAlertViewDelegate,UINavigationBarDelegate,UINavigationControllerDelegate, UIPickerViewDataSource, UIPickerViewDelegate
 {
-    
 
    
     
@@ -26,7 +26,7 @@ class addLostItemViewController: UIViewController,UIImagePickerControllerDelegat
     @IBOutlet weak var img_item: UIImageView!
      var imageFlag : Bool = false
     
-    @IBOutlet weak var categoryPicker: UIPickerView!
+  var categoryPicker = UIPickerView()
  
   
     var imageController = UIImagePickerController()
@@ -37,17 +37,20 @@ class addLostItemViewController: UIViewController,UIImagePickerControllerDelegat
     
     
 
-    let category = [String](arrayLiteral: "Peter", "Jane", "Paul", "Mary", "Kevin", "Lucy")
+    let category = ["Electronics", "Kitchen", "Clothes", "Accesories"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
 self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background1")!)
         
-        txt_category.inputView = categoryPicker
+     //   txt_category.inputView = categoryPicker
         
         imageController.delegate = self
         categoryPicker.dataSource = self
         categoryPicker.delegate = self
+        
+        txt_category.inputView = categoryPicker
+       // self.txt_category.delegate = self as! UITextFieldDelegate
         // Do any additional setup after loading the view.
     }
     
@@ -119,45 +122,51 @@ self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background1")!
         
     }
    
-    /*
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
-        let image = info[UIImagePickerControllerOriginalImage] as! UIImage
-        img_item.image = image
-        dismiss(animated:true, completion: nil)
-    }
-    /*
-    private func imagePickerController(picker: UIImagePickerController,didFinishPickingMediaWithInfo info: [NSObject : AnyObject])
-    {
-        imageController.dismiss(animated: true, completion: nil)
+      func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+            self.dismiss(animated: true, completion: nil)
+        }
         
-        //        var imag_var =  info[UIImagePickerControllerOriginalImage] as! UIImage
+        func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+            
+            let mediaType = info[UIImagePickerController.InfoKey.mediaType] as! NSString
+            
+            if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+                self.img_item.image = image
+                //Save Image if taken from Camera
+                if (imageFlag == true) {
+                    UIImageWriteToSavedPhotosAlbum(image, self, #selector(self.image(image:didFinishSavingWithError:contextInfo:)), nil)
+                } else if mediaType.isEqual(to: kUTTypeMovie as String) {
+                    // Code to support video here
+                }
+            }else{
+                print("Something went wrong")
+            }
+            
+            //Display all keys
+            for (k, _) in info {
+                print("TEST - \(k)")
+            }
+            self.dismiss(animated: true, completion: nil)
+        }
         
-        
-        
-        
-        //        img_data = UIImagePNGRepresentation(imag_var)!
-        //        print(img_data)
-        
-        
-        let imag_var =  info[UIImagePickerControllerOriginalImage] as! UIImage
-        img_item.contentMode = .scaleToFill
-        img_item.image = imag_var
-        img_data = UIImagePNGRepresentation(imag_var)!
-        img_dataDic.setObject(img_data, forKey: "isImageupload" as NSCopying)
-        imageFlag = true
-        //         btn_upldimg.setBackgroundImage(imag_var, forState: UIControlState.Normal)
-        
-        
+        @objc func image(image: UIImage, didFinishSavingWithError error: NSErrorPointer, contextInfo:UnsafeRawPointer) {
+            
+            if error != nil {
+                let alert = UIAlertController(title: "Save Failed",
+                                              message: "Failed to save image",
+                                              preferredStyle: UIAlertController.Style.alert)
+                
+                let cancelAction = UIAlertAction(title: "OK",
+                                                 style: .cancel, handler: nil)
+                
+                alert.addAction(cancelAction)
+                self.present(alert, animated: true,
+                             completion: nil)
+            }
         
     }
     
-  */
-    func imagePickerControllerDidCancel(_ picker: UIImagePickerController)
-    {
-        imageController.dismiss(animated: true, completion: nil)
-    }
     
-    */
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
@@ -166,6 +175,8 @@ self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background1")!
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return category.count
     }
+
+   
     
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
@@ -174,7 +185,8 @@ self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background1")!
     
     
     func pickerView( pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        self.txt_category.text = category[row]
+       txt_category.text = category[row]
+        self.view.endEditing(false)
     }
     
     
@@ -192,9 +204,51 @@ self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background1")!
        // let itemID : Int = txt_place?.text
         let itemDes : String = txt_description.text!
         let itemName : String = txt_itemName.text!
-        let itemCat : String = txt_category.text!
+       // let itemCat : String = txt_category.text!
         
     }
     
     
 }
+
+
+
+/*
+ func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+ let image = info[UIImagePickerControllerOriginalImage] as! UIImage
+ img_item.image = image
+ dismiss(animated:true, completion: nil)
+ }
+ /*
+ private func imagePickerController(picker: UIImagePickerController,didFinishPickingMediaWithInfo info: [NSObject : AnyObject])
+ {
+ imageController.dismiss(animated: true, completion: nil)
+ 
+ //        var imag_var =  info[UIImagePickerControllerOriginalImage] as! UIImage
+ 
+ 
+ 
+ 
+ //        img_data = UIImagePNGRepresentation(imag_var)!
+ //        print(img_data)
+ 
+ 
+ let imag_var =  info[UIImagePickerControllerOriginalImage] as! UIImage
+ img_item.contentMode = .scaleToFill
+ img_item.image = imag_var
+ img_data = UIImagePNGRepresentation(imag_var)!
+ img_dataDic.setObject(img_data, forKey: "isImageupload" as NSCopying)
+ imageFlag = true
+ //         btn_upldimg.setBackgroundImage(imag_var, forState: UIControlState.Normal)
+ 
+ 
+ 
+ }
+ 
+ */
+ func imagePickerControllerDidCancel(_ picker: UIImagePickerController)
+ {
+ imageController.dismiss(animated: true, completion: nil)
+ }
+ 
+ */
