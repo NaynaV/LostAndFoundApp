@@ -56,5 +56,5 @@ struct Item {
     var ItemName: String
     var ItemDescription: String
     var ItemCat : String
-    var ItemType : String
+   
 }

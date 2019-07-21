@@ -5,8 +5,6 @@
 	<key>Items</key>
 	<array>
 		<dict>
-			<key>ItemType</key>
-			<string>Found</string>
 			<key>ItemDescription</key>
 			<string>remote</string>
 			<key>ItemCat</key>
@@ -17,8 +15,6 @@
 			<integer>2</integer>
 		</dict>
 		<dict>
-			<key>ItemType</key>
-			<string>Lost</string>
 			<key>ItemDescription</key>
 			<string>red Toy</string>
 			<key>ItemCat</key>

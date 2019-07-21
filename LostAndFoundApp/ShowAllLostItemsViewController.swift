@@ -12,7 +12,7 @@ class ShowAllLostItemsViewController: UIViewController, UITableViewDelegate, UIT
     
     //var students = [Student]()
 
-    
+
     var ItemArray = [Item]()
     
     @IBOutlet weak var tbl_showLostItems: UITableView!
@@ -49,7 +49,7 @@ class ShowAllLostItemsViewController: UIViewController, UITableViewDelegate, UIT
         cell.lbl_ItemName.text = "Item Name :\(showItem.ItemName)"
         cell.lbl_itemCat.text = "Item Category :\(showItem.ItemCat)"
         cell.lbl_itemDes.text = "Item Description :\(showItem.ItemDescription)"
-        cell.lbl_itemType.text = "Item Type :\(showItem.ItemType)"
+       
         
        
         
@@ -58,7 +58,7 @@ class ShowAllLostItemsViewController: UIViewController, UITableViewDelegate, UIT
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return CGFloat(400)
+        return CGFloat(300)
     }
   
     func readStudentInfoPlistFile()
@@ -75,9 +75,8 @@ class ShowAllLostItemsViewController: UIViewController, UITableViewDelegate, UIT
                         let itemName = showItem["ItemName"] as! String
                         let itemCat = showItem["ItemCat"] as! String
                         let itemDes = showItem["ItemDescription"] as! String
-                        let itemType = showItem["ItemType"] as! String
                         
-                        self.ItemArray.append(Item(ItemId: itemId, ItemName: itemName, ItemDescription: itemDes, ItemCat: itemCat, ItemType: itemType))
+                        self.ItemArray.append(Item(ItemId: itemId, ItemName: itemName, ItemDescription: itemDes, ItemCat: itemCat))
                         
                         self.tbl_showLostItems.reloadData()
                     }
