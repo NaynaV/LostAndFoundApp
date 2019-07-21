@@ -13,7 +13,7 @@ class ShowAllLostItemsViewController: UIViewController, UITableViewDelegate, UIT
     //var students = [Student]()
 
 
-    var ItemArray = [Item]()
+    var LostItemArray = [Item]()
     
     @IBOutlet weak var tbl_showLostItems: UITableView!
     
@@ -27,7 +27,7 @@ class ShowAllLostItemsViewController: UIViewController, UITableViewDelegate, UIT
     self.tbl_showLostItems.delegate = self
     self.tbl_showLostItems.dataSource = self
   //  tbl_showLostItems.register(UITableViewCell.self, forCellReuseIdentifier: "cellLostItems")
-    readStudentInfoPlistFile()
+    getLostItemData()
 
     }
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -42,20 +42,22 @@ class ShowAllLostItemsViewController: UIViewController, UITableViewDelegate, UIT
    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
    {
        //   return self.students.count
-    return self.ItemArray.count
+    return self.LostItemArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellLostItems") as! ShowLostItemsTableViewCell
-        let showItem = self.ItemArray[indexPath.row]
+        let lostItem = self.LostItemArray[indexPath.row]
         
-        cell.lbl_itemId.text = "Item Id :\(showItem.ItemId)"
-        cell.lbl_ItemName.text = "Item Name :\(showItem.ItemName)"
-        cell.lbl_itemCat.text = "Item Category :\(showItem.ItemCat)"
-        cell.lbl_itemDes.text = "Item Description :\(showItem.ItemDescription)"
- //   cell.lbl_itemImage. = "\(showItem.ItemImage)"
-        cell.lbl_itemReward.text = "Reward :\(showItem.ItemReward)"
+        
+     
+        cell.lbl_ItemName.text = "Item Name :\(lostItem.ItemName)"
+        cell.lbl_itemLostdate.text = "Item Category :\(lostItem.ItemLostDate)"
+        cell.lbl_itemDes.text = "Item Description :\(lostItem.ItemDescription)"
+        cell.lbl_itemLostPlace.text = "Lost Place:\(lostItem.ItemLostPlace)"
+   //cell.lbl_itemImage.image = "\(UIImage.showItem.ItemImage)"
+        cell.lbl_itemReward.text = "Reward :\(lostItem.ItemReward)"
         
        
         
@@ -66,32 +68,12 @@ class ShowAllLostItemsViewController: UIViewController, UITableViewDelegate, UIT
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return CGFloat(300)
     }
-  
-    func readStudentInfoPlistFile()
+    private func getLostItemData()
     {
-        if let plist = Bundle.main.path(forResource: "LostItem", ofType: "plist")
-        {
-            if let dict = NSDictionary(contentsOfFile: plist)
-            {
-                if let showItems = dict["Items"] as? [[String:Any]]
-                {
-                    for showItem in showItems
-                    {
-                        let itemId = showItem["ItemId"] as! Int
-                        let itemName = showItem["ItemName"] as! String
-                        let itemCat = showItem["ItemCat"] as! String
-                        let itemDes = showItem["ItemDescription"] as! String
-                        let itemReward = showItem["ItemReward"] as! String
-                        let itemLostPlace = showItem["ItemLostPlace"] as! String
-                        let itemLostDate = showItem["ItemLostDate"] as! Date
-                        let itemImage = showItem["ItemImage"] as! String
- 
-                        self.ItemArray.append(Item(ItemId: itemId, ItemName: itemName, ItemDescription: itemDes, ItemCat: itemCat, ItemReward: itemReward, ItemLostDate: itemLostDate, ItemImage: itemImage, ItemLostPlace: itemLostPlace))
-                        
-                        self.tbl_showLostItems.reloadData()
-                    }
-                }
-            }
-        }
+        LostItemArray = []
+       LostItemArray.append(Item(ItemName: "Iphone", ItemDescription: "Iphone ^s roseGold", ItemReward: "$40", ItemLostDate: Date(), ItemImage: "hj.png", ItemLostPlace: "graydon hall", ItemLostContact: "236900899"))
+        
+         LostItemArray.append(Item(ItemName: "cap", ItemDescription: "Nike Cap", ItemReward: "$10", ItemLostDate: Date(), ItemImage: "hj.png", ItemLostPlace: "graydon hall", ItemLostContact: "236900899"))
     }
+   
 }

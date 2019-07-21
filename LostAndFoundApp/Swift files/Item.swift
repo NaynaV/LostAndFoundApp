@@ -52,13 +52,13 @@ class Item
 
 
 struct Item {
-    var ItemId: Int
+   // var ItemId: Int
     var ItemName: String
     var ItemDescription: String
-    var ItemCat : String
+   // var ItemCat : String
     var ItemReward : String
     var ItemLostDate : Date
     var ItemImage : String
     var ItemLostPlace : String
-   
+    var ItemLostContact : String
 }
