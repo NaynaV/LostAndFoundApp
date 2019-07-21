@@ -17,6 +17,13 @@ class ShowLostItemsTableViewCell: UITableViewCell {
     @IBOutlet weak var lbl_itemType: UILabel!
     @IBOutlet weak var lbl_itemCat: UILabel!
     
+    @IBOutlet weak var lbl_itemImage: UIImageView!
+    
+    @IBOutlet weak var lbl_itemReward: UILabel!
+    
+    @IBOutlet weak var lbl_itemLostPlace: UILabel!
+    @IBOutlet weak var lbl_itemLostdate: UILabel!
+    
     @IBOutlet weak var lbl_itemDes: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()

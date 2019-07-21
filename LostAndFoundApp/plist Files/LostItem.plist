@@ -5,6 +5,14 @@
 	<key>Items</key>
 	<array>
 		<dict>
+			<key>itemLostPlace</key>
+			<string>Graydon Hall dr</string>
+			<key>itemLostDate</key>
+			<date>2019-07-21T03:09:36Z</date>
+			<key>itemImage</key>
+			<string></string>
+			<key>itemReward</key>
+			<string>$50</string>
 			<key>ItemDescription</key>
 			<string>remote</string>
 			<key>ItemCat</key>
@@ -15,6 +23,14 @@
 			<integer>2</integer>
 		</dict>
 		<dict>
+			<key>itemLostPlace</key>
+			<string>lambton college</string>
+			<key>itemLostDate</key>
+			<date>2019-07-21T03:11:03Z</date>
+			<key>itemImage</key>
+			<string>logo.png</string>
+			<key>itemReward</key>
+			<string>$45</string>
 			<key>ItemDescription</key>
 			<string>red Toy</string>
 			<key>ItemCat</key>

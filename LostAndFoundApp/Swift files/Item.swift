@@ -56,5 +56,9 @@ struct Item {
     var ItemName: String
     var ItemDescription: String
     var ItemCat : String
+    var ItemReward : String
+    var ItemLostDate : Date
+    var ItemImage : String
+    var ItemLostPlace : String
    
 }

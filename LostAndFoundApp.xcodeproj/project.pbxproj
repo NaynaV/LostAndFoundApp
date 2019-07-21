@@ -21,9 +21,11 @@
 		EBC6256222D0192A001C83B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBC6256022D0192A001C83B5 /* LaunchScreen.storyboard */; };
 		EBC6256A22D01FE1001C83B5 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC6256922D01FE1001C83B5 /* MenuViewController.swift */; };
 		EBC6256C22D02021001C83B5 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC6256B22D02021001C83B5 /* SignupViewController.swift */; };
-		EBEF8F7022E3925B00E63840 /* ItemData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEF8F6F22E3925B00E63840 /* ItemData.swift */; };
 		EBEF8F7222E394DA00E63840 /* LostItem.plist in Resources */ = {isa = PBXBuildFile; fileRef = EBEF8F7122E394DA00E63840 /* LostItem.plist */; };
 		EBEF8F7422E397B200E63840 /* ShowLostItemsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEF8F7322E397B200E63840 /* ShowLostItemsTableViewCell.swift */; };
+		EBEF8F7722E4166400E63840 /* ShowAllFoundItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEF8F7622E4166400E63840 /* ShowAllFoundItemsViewController.swift */; };
+		EBEF8F7922E4168900E63840 /* FoundItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEF8F7822E4168900E63840 /* FoundItems.swift */; };
+		EBEF8F7B22E4178E00E63840 /* ShowFoundItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEF8F7A22E4178E00E63840 /* ShowFoundItemTableViewCell.swift */; };
 		EBF1831A22D2DCF500EC112D /* addLostItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF1831922D2DCF500EC112D /* addLostItemViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -44,9 +46,11 @@
 		EBC6256322D0192A001C83B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EBC6256922D01FE1001C83B5 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		EBC6256B22D02021001C83B5 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
-		EBEF8F6F22E3925B00E63840 /* ItemData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemData.swift; sourceTree = "<group>"; };
 		EBEF8F7122E394DA00E63840 /* LostItem.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = LostItem.plist; sourceTree = "<group>"; };
 		EBEF8F7322E397B200E63840 /* ShowLostItemsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowLostItemsTableViewCell.swift; sourceTree = "<group>"; };
+		EBEF8F7622E4166400E63840 /* ShowAllFoundItemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowAllFoundItemsViewController.swift; sourceTree = "<group>"; };
+		EBEF8F7822E4168900E63840 /* FoundItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoundItems.swift; sourceTree = "<group>"; };
+		EBEF8F7A22E4178E00E63840 /* ShowFoundItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowFoundItemTableViewCell.swift; sourceTree = "<group>"; };
 		EBF1831922D2DCF500EC112D /* addLostItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addLostItemViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -65,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				EB01EB9922DCF34A006DF4ED /* userData.swift */,
+				EBEF8F7822E4168900E63840 /* FoundItems.swift */,
 				EB01EB9E22DCF7C3006DF4ED /* Item.swift */,
 			);
 			path = "Swift files";
@@ -97,6 +102,7 @@
 		EBC6255622D01928001C83B5 /* LostAndFoundApp */ = {
 			isa = PBXGroup;
 			children = (
+				EBEF8F7522E40E4F00E63840 /* plist Files */,
 				EB01EB9B22DCF423006DF4ED /* Extensions */,
 				EB01EB9822DCF32A006DF4ED /* Swift files */,
 				EBC6255722D01928001C83B5 /* AppDelegate.swift */,
@@ -108,15 +114,23 @@
 				EBC6256022D0192A001C83B5 /* LaunchScreen.storyboard */,
 				EBC6256B22D02021001C83B5 /* SignupViewController.swift */,
 				EB7D450A22DA63A800FD69B2 /* demoViewController.swift */,
-				EB01EB9622DCF06E006DF4ED /* userInfo.plist */,
 				EB01EBA222DD01BD006DF4ED /* ShowAllLostItemsViewController.swift */,
 				EBF1831922D2DCF500EC112D /* addLostItemViewController.swift */,
 				9BF5793722E13C690037C0DD /* addFoundItemViewController.swift */,
-				EBEF8F6F22E3925B00E63840 /* ItemData.swift */,
-				EBEF8F7122E394DA00E63840 /* LostItem.plist */,
 				EBEF8F7322E397B200E63840 /* ShowLostItemsTableViewCell.swift */,
+				EBEF8F7622E4166400E63840 /* ShowAllFoundItemsViewController.swift */,
+				EBEF8F7A22E4178E00E63840 /* ShowFoundItemTableViewCell.swift */,
 			);
 			path = LostAndFoundApp;
+			sourceTree = "<group>";
+		};
+		EBEF8F7522E40E4F00E63840 /* plist Files */ = {
+			isa = PBXGroup;
+			children = (
+				EBEF8F7122E394DA00E63840 /* LostItem.plist */,
+				EB01EB9622DCF06E006DF4ED /* userInfo.plist */,
+			);
+			path = "plist Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,13 +211,15 @@
 				EB01EB9F22DCF7C3006DF4ED /* Item.swift in Sources */,
 				EBC6256A22D01FE1001C83B5 /* MenuViewController.swift in Sources */,
 				9BF5793822E13C690037C0DD /* addFoundItemViewController.swift in Sources */,
+				EBEF8F7B22E4178E00E63840 /* ShowFoundItemTableViewCell.swift in Sources */,
+				EBEF8F7922E4168900E63840 /* FoundItems.swift in Sources */,
 				EBC6256C22D02021001C83B5 /* SignupViewController.swift in Sources */,
-				EBEF8F7022E3925B00E63840 /* ItemData.swift in Sources */,
 				EB01EB9A22DCF34A006DF4ED /* userData.swift in Sources */,
 				EB01EB9D22DCF43C006DF4ED /* String_extension.swift in Sources */,
 				EBF1831A22D2DCF500EC112D /* addLostItemViewController.swift in Sources */,
 				EBEF8F7422E397B200E63840 /* ShowLostItemsTableViewCell.swift in Sources */,
 				EBC6255822D01928001C83B5 /* AppDelegate.swift in Sources */,
+				EBEF8F7722E4166400E63840 /* ShowAllFoundItemsViewController.swift in Sources */,
 				EB7D450B22DA63A800FD69B2 /* demoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

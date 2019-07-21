@@ -54,7 +54,8 @@ class ShowAllLostItemsViewController: UIViewController, UITableViewDelegate, UIT
         cell.lbl_ItemName.text = "Item Name :\(showItem.ItemName)"
         cell.lbl_itemCat.text = "Item Category :\(showItem.ItemCat)"
         cell.lbl_itemDes.text = "Item Description :\(showItem.ItemDescription)"
-       
+    cell.lbl_itemImage. = "\(showItem.ItemImage)"
+        cell.lbl_itemReward.text = "Reward :\(showItem.ItemReward)"
         
        
         
@@ -80,8 +81,12 @@ class ShowAllLostItemsViewController: UIViewController, UITableViewDelegate, UIT
                         let itemName = showItem["ItemName"] as! String
                         let itemCat = showItem["ItemCat"] as! String
                         let itemDes = showItem["ItemDescription"] as! String
-                        
-                        self.ItemArray.append(Item(ItemId: itemId, ItemName: itemName, ItemDescription: itemDes, ItemCat: itemCat))
+                        let itemReward = showItem["ItemReward"] as! String
+                        let itemLostPlace = showItem["ItemLostPlace"] as! String
+                        let itemLostDate = showItem["ItemLostDate"] as! Date
+                        let itemImage = showItem["ItemImage"] as! String
+ 
+                        self.ItemArray.append(Item(ItemId: itemId, ItemName: itemName, ItemDescription: itemDes, ItemCat: itemCat, ItemReward: itemReward, ItemLostDate: itemLostDate, ItemImage: itemImage, ItemLostPlace: itemLostPlace))
                         
                         self.tbl_showLostItems.reloadData()
                     }
