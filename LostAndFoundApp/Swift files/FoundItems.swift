@@ -13,4 +13,5 @@ struct FoundItem {
     var fItemCat : String
     var fItemDes : String
     var fItemDate : String
+    var fItemPlace : String
 }

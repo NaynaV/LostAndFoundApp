@@ -81,6 +81,9 @@ class MenuViewController: UIViewController {
     
     @IBAction func btn_aboutUsClicked(_ sender: Any)
     {
+        let myStoryBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let nextVC = myStoryBoard.instantiateViewController(withIdentifier: "aboutUsVC") as! AboutUsViewController
+        self.present(nextVC, animated: true, completion: nil)
     }
     
     

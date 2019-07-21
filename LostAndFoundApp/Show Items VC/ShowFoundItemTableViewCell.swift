@@ -14,6 +14,7 @@ class ShowFoundItemTableViewCell: UITableViewCell {
     
     @IBOutlet weak var lbl_fItemCat: UILabel!
     @IBOutlet weak var lbl_fItemDes: UILabel!
+    @IBOutlet weak var lbl_fItemPlace: UILabel!
     
     
     @IBOutlet weak var lbl_fItemDate: UILabel!

@@ -24,6 +24,19 @@ class LoginViewController: UIViewController {
     // getting user defaults reference
     let userDefault = UserDefaults.standard
     
+    override func viewDidLoad()
+    {
+        
+        switchRememberMe.isOn = false
+        getRememberMe()
+        readCustomersPlistFile()
+        super.viewDidLoad()
+        
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background1")!)
+        
+    }
+
+    
     
     @IBAction func btnSignup(_ sender: UIButton)
     {
@@ -145,18 +158,7 @@ class LoginViewController: UIViewController {
     
  
     
-    override func viewDidLoad()
-    {
-        
-        switchRememberMe.isOn = false
-        getRememberMe()
-        readCustomersPlistFile()
-        super.viewDidLoad()
-      
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background1")!)
-        
-    }
-
+  
 
 }
 

@@ -22,7 +22,7 @@ class ShowAllLostItemsViewController: UIViewController, UITableViewDelegate, UIT
     
    override func viewDidLoad() {
         super.viewDidLoad()
-    
+     self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background1")!);
     
     self.tbl_showLostItems.delegate = self
     self.tbl_showLostItems.dataSource = self

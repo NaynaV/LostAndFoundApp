@@ -14,6 +14,10 @@
 		EB01EB9F22DCF7C3006DF4ED /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB01EB9E22DCF7C3006DF4ED /* Item.swift */; };
 		EB01EBA322DD01BD006DF4ED /* ShowAllLostItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB01EBA222DD01BD006DF4ED /* ShowAllLostItemsViewController.swift */; };
 		EB7A23A622E4E90100C30C08 /* ContactUSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7A23A522E4E90100C30C08 /* ContactUSViewController.swift */; };
+		EB7A23C322E4EE2600C30C08 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB7A23C222E4EE2500C30C08 /* MessageUI.framework */; };
+		EB7A23C522E4F41B00C30C08 /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7A23C422E4F41B00C30C08 /* AboutUsViewController.swift */; };
+		EB7A23C722E4F50300C30C08 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB7A23C622E4F50300C30C08 /* WebKit.framework */; };
+		EB7A23CB22E506BB00C30C08 /* aboutUs.html in Resources */ = {isa = PBXBuildFile; fileRef = EB7A23CA22E506BB00C30C08 /* aboutUs.html */; };
 		EB7D450B22DA63A800FD69B2 /* demoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7D450A22DA63A800FD69B2 /* demoViewController.swift */; };
 		EBC6255822D01928001C83B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC6255722D01928001C83B5 /* AppDelegate.swift */; };
 		EBC6255A22D01928001C83B5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC6255922D01928001C83B5 /* LoginViewController.swift */; };
@@ -38,6 +42,10 @@
 		EB01EB9E22DCF7C3006DF4ED /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		EB01EBA222DD01BD006DF4ED /* ShowAllLostItemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowAllLostItemsViewController.swift; sourceTree = "<group>"; };
 		EB7A23A522E4E90100C30C08 /* ContactUSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUSViewController.swift; sourceTree = "<group>"; };
+		EB7A23C222E4EE2500C30C08 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		EB7A23C422E4F41B00C30C08 /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
+		EB7A23C622E4F50300C30C08 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		EB7A23CA22E506BB00C30C08 /* aboutUs.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = aboutUs.html; path = ../../../../Desktop/aboutUs.html; sourceTree = "<group>"; };
 		EB7D450A22DA63A800FD69B2 /* demoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = demoViewController.swift; sourceTree = "<group>"; };
 		EBC6255422D01928001C83B5 /* LostAndFoundApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LostAndFoundApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBC6255722D01928001C83B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +69,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB7A23C722E4F50300C30C08 /* WebKit.framework in Frameworks */,
+				EB7A23C322E4EE2600C30C08 /* MessageUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,8 +119,19 @@
 			isa = PBXGroup;
 			children = (
 				EB7A23A522E4E90100C30C08 /* ContactUSViewController.swift */,
+				EB7A23C422E4F41B00C30C08 /* AboutUsViewController.swift */,
+				EB7A23CA22E506BB00C30C08 /* aboutUs.html */,
 			);
 			path = "Other VC";
+			sourceTree = "<group>";
+		};
+		EB7A23C122E4EE2500C30C08 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EB7A23C622E4F50300C30C08 /* WebKit.framework */,
+				EB7A23C222E4EE2500C30C08 /* MessageUI.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		EBC6254B22D01928001C83B5 = {
@@ -118,6 +139,7 @@
 			children = (
 				EBC6255622D01928001C83B5 /* LostAndFoundApp */,
 				EBC6255522D01928001C83B5 /* Products */,
+				EB7A23C122E4EE2500C30C08 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -218,6 +240,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB7A23CB22E506BB00C30C08 /* aboutUs.html in Resources */,
 				EBC6256222D0192A001C83B5 /* LaunchScreen.storyboard in Resources */,
 				EBC6255F22D0192A001C83B5 /* Assets.xcassets in Resources */,
 				EBC6255D22D01928001C83B5 /* Main.storyboard in Resources */,
@@ -245,6 +268,7 @@
 				EB01EB9D22DCF43C006DF4ED /* String_extension.swift in Sources */,
 				EBF1831A22D2DCF500EC112D /* addLostItemViewController.swift in Sources */,
 				EB7A23A622E4E90100C30C08 /* ContactUSViewController.swift in Sources */,
+				EB7A23C522E4F41B00C30C08 /* AboutUsViewController.swift in Sources */,
 				EBEF8F7422E397B200E63840 /* ShowLostItemsTableViewCell.swift in Sources */,
 				EBC6255822D01928001C83B5 /* AppDelegate.swift in Sources */,
 				EBEF8F7722E4166400E63840 /* ShowAllFoundItemsViewController.swift in Sources */,

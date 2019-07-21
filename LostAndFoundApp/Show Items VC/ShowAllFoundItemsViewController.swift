@@ -24,6 +24,7 @@ class ShowAllFoundItemsViewController: UIViewController, UITableViewDelegate, UI
     
     override func viewDidLoad() {
         super.viewDidLoad()
+         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background1")!);
 self.tbl_FoundItems.delegate = self
         self.tbl_FoundItems.dataSource = self
         getFoundItemData()
@@ -33,8 +34,8 @@ self.tbl_FoundItems.delegate = self
     private func getFoundItemData()
     {
         foundItemArray = []
-        foundItemArray.append(FoundItem(fItemName: "key", fItemCat: "Personal", fItemDes: "shhsd", fItemDate: "dsds"))
-       foundItemArray.append(FoundItem(fItemName: "Bottel", fItemCat: "Home", fItemDes: "water blue bttel", fItemDate: "sfdss"))
+        foundItemArray.append(FoundItem(fItemName: "key", fItemCat: "Personal", fItemDes: "shhsd", fItemDate: "dsds", fItemPlace: "Lambton College"))
+        foundItemArray.append(FoundItem(fItemName: "Bottel", fItemCat: "Home", fItemDes: "water blue bttel", fItemDate: "sfdss", fItemPlace: "Nanak House"))
         
     }
     
@@ -50,13 +51,14 @@ self.tbl_FoundItems.delegate = self
         fItemCell.lbl_fItemCat.text = foundItem.fItemCat
         fItemCell.lbl_fItemDes.text = foundItem.fItemDes
         fItemCell.lbl_fItemDate.text = foundItem.fItemDate
+        fItemCell.lbl_fItemPlace.text = foundItem.fItemPlace
         return fItemCell
         
         
        
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 130.0
+        return 200.0
     }
 
 }

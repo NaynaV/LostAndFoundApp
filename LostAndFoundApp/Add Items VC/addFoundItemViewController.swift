@@ -49,4 +49,17 @@ class addFoundItemViewController: UIViewController, UIPickerViewDelegate, UIPick
         //print(category[row])
     }
     
+    
+    @IBAction func btn_backClick(_ sender: UIBarButtonItem)
+    {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let dashboardVC = storyboard.instantiateViewController(withIdentifier: "MenuVC") as! MenuViewController
+        
+        self.navigationController?.pushViewController(dashboardVC, animated: true)
+    }
+    
+    @IBAction func btn_saveClick(_ sender: UIBarButtonItem) {
+    }
+    
+    
 }
