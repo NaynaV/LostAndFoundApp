@@ -37,21 +37,20 @@ class addLostItemViewController: UIViewController,UIImagePickerControllerDelegat
     
     
 
-    let category = ["Electronics", "Kitchen", "Clothes", "Accesories"]
+    var category = ["Electronics", "Kitchen", "Clothes", "Accesories"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
 self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background1")!)
         
-     //   txt_category.inputView = categoryPicker
-        
+    
         imageController.delegate = self
         categoryPicker.dataSource = self
         categoryPicker.delegate = self
         
         txt_category.inputView = categoryPicker
-       // self.txt_category.delegate = self as! UITextFieldDelegate
-        // Do any additional setup after loading the view.
+    
+     
     }
     
     @IBAction func btn_imagePick(_ sender: Any)
@@ -187,6 +186,8 @@ self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background1")!
     func pickerView( pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
        txt_category.text = category[row]
         self.view.endEditing(false)
+        
+        print(category[row])
     }
     
     
@@ -211,44 +212,3 @@ self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background1")!
     
 }
 
-
-
-/*
- func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
- let image = info[UIImagePickerControllerOriginalImage] as! UIImage
- img_item.image = image
- dismiss(animated:true, completion: nil)
- }
- /*
- private func imagePickerController(picker: UIImagePickerController,didFinishPickingMediaWithInfo info: [NSObject : AnyObject])
- {
- imageController.dismiss(animated: true, completion: nil)
- 
- //        var imag_var =  info[UIImagePickerControllerOriginalImage] as! UIImage
- 
- 
- 
- 
- //        img_data = UIImagePNGRepresentation(imag_var)!
- //        print(img_data)
- 
- 
- let imag_var =  info[UIImagePickerControllerOriginalImage] as! UIImage
- img_item.contentMode = .scaleToFill
- img_item.image = imag_var
- img_data = UIImagePNGRepresentation(imag_var)!
- img_dataDic.setObject(img_data, forKey: "isImageupload" as NSCopying)
- imageFlag = true
- //         btn_upldimg.setBackgroundImage(imag_var, forState: UIControlState.Normal)
- 
- 
- 
- }
- 
- */
- func imagePickerControllerDidCancel(_ picker: UIImagePickerController)
- {
- imageController.dismiss(animated: true, completion: nil)
- }
- 
- */
