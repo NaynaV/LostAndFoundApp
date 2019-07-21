@@ -180,9 +180,11 @@ self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background1")!
     
     @IBAction func btn_back(_ sender: Any) {
     
-        let myStoryBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let nextVC = myStoryBoard.instantiateViewController(withIdentifier: "loginVC") as! LoginViewController
-        self.present(nextVC, animated: true, completion: nil)
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let dashboardVC = storyboard.instantiateViewController(withIdentifier: "MenuVC") as! MenuViewController
+        
+        self.navigationController?.pushViewController(dashboardVC, animated: true)
     
     }
     @IBAction func btn_saveLostItem(_ sender: UIButton)

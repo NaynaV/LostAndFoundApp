@@ -172,7 +172,14 @@
                                 <rect key="frame" x="0.0" y="35" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
-                                    <navigationItem title="Lost Items " id="u2V-34-PjQ"/>
+                                    <navigationItem title="Lost Items " id="u2V-34-PjQ">
+                                        <barButtonItem key="leftBarButtonItem" title="&lt; Back" id="gd7-rp-IMH">
+                                            <connections>
+                                                <action selector="btn_back:" destination="388-Sf-9aU" id="PTP-jd-oZJ"/>
+                                                <segue destination="84V-Jz-ROZ" kind="presentation" id="wpv-Jc-gsZ"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
                                 </items>
                             </navigationBar>
                         </subviews>
@@ -635,8 +642,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Omw-L8-fcd">
-                                <rect key="frame" x="-9" y="36" width="414" height="44"/>
+                                <rect key="frame" x="-9" y="36" width="423" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.097153157488766531" green="0.27185304152696999" blue="0.7309248096446701" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="sRGB"/>
                                 <items>
                                     <navigationItem title="Menu" id="xkX-mc-aT9">
                                         <barButtonItem key="leftBarButtonItem" title="Item" id="P2x-2f-BoX">
@@ -713,4 +721,7 @@
         <image name="login_icon" width="163" height="159"/>
         <image name="logo" width="705" height="354"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="DTZ-JS-NXO"/>
+    </inferredMetricsTieBreakers>
 </document>

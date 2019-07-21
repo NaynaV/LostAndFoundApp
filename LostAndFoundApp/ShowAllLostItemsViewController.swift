@@ -66,7 +66,7 @@ class ShowAllLostItemsViewController: UIViewController, UITableViewDelegate, UIT
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return CGFloat(300)
+        return CGFloat(250)
     }
     private func getLostItemData()
     {
@@ -75,5 +75,16 @@ class ShowAllLostItemsViewController: UIViewController, UITableViewDelegate, UIT
         
         LostItemArray.append(Item(ItemName: "cap", ItemDescription: "Nike Cap", ItemCat: "Clothes", ItemReward: "$10", ItemLostDate: Date(), ItemImage: "purseImage", ItemLostPlace: "graydon hall", ItemLostContact: "236900899"))
     }
+    
+    
+    @IBAction func btn_back(_ sender: UIBarButtonItem)
+    {
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let dashboardVC = storyboard.instantiateViewController(withIdentifier: "MenuVC") as! MenuViewController
+        
+        self.navigationController?.pushViewController(dashboardVC, animated: true)
+    }
+    
    
 }
