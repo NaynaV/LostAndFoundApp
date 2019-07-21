@@ -13,6 +13,7 @@
 		EB01EB9D22DCF43C006DF4ED /* String_extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB01EB9C22DCF43C006DF4ED /* String_extension.swift */; };
 		EB01EB9F22DCF7C3006DF4ED /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB01EB9E22DCF7C3006DF4ED /* Item.swift */; };
 		EB01EBA322DD01BD006DF4ED /* ShowAllLostItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB01EBA222DD01BD006DF4ED /* ShowAllLostItemsViewController.swift */; };
+		EB7A23A622E4E90100C30C08 /* ContactUSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7A23A522E4E90100C30C08 /* ContactUSViewController.swift */; };
 		EB7D450B22DA63A800FD69B2 /* demoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7D450A22DA63A800FD69B2 /* demoViewController.swift */; };
 		EBC6255822D01928001C83B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC6255722D01928001C83B5 /* AppDelegate.swift */; };
 		EBC6255A22D01928001C83B5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC6255922D01928001C83B5 /* LoginViewController.swift */; };
@@ -36,6 +37,7 @@
 		EB01EB9C22DCF43C006DF4ED /* String_extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String_extension.swift; sourceTree = "<group>"; };
 		EB01EB9E22DCF7C3006DF4ED /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		EB01EBA222DD01BD006DF4ED /* ShowAllLostItemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowAllLostItemsViewController.swift; sourceTree = "<group>"; };
+		EB7A23A522E4E90100C30C08 /* ContactUSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUSViewController.swift; sourceTree = "<group>"; };
 		EB7D450A22DA63A800FD69B2 /* demoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = demoViewController.swift; sourceTree = "<group>"; };
 		EBC6255422D01928001C83B5 /* LostAndFoundApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LostAndFoundApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBC6255722D01928001C83B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +85,34 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		EB7A23A222E4E87C00C30C08 /* Add Items VC */ = {
+			isa = PBXGroup;
+			children = (
+				9BF5793722E13C690037C0DD /* addFoundItemViewController.swift */,
+				EBF1831922D2DCF500EC112D /* addLostItemViewController.swift */,
+			);
+			path = "Add Items VC";
+			sourceTree = "<group>";
+		};
+		EB7A23A322E4E8B100C30C08 /* Show Items VC */ = {
+			isa = PBXGroup;
+			children = (
+				EBEF8F7322E397B200E63840 /* ShowLostItemsTableViewCell.swift */,
+				EB01EBA222DD01BD006DF4ED /* ShowAllLostItemsViewController.swift */,
+				EBEF8F7622E4166400E63840 /* ShowAllFoundItemsViewController.swift */,
+				EBEF8F7A22E4178E00E63840 /* ShowFoundItemTableViewCell.swift */,
+			);
+			path = "Show Items VC";
+			sourceTree = "<group>";
+		};
+		EB7A23A422E4E8E000C30C08 /* Other VC */ = {
+			isa = PBXGroup;
+			children = (
+				EB7A23A522E4E90100C30C08 /* ContactUSViewController.swift */,
+			);
+			path = "Other VC";
+			sourceTree = "<group>";
+		};
 		EBC6254B22D01928001C83B5 = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +132,9 @@
 		EBC6255622D01928001C83B5 /* LostAndFoundApp */ = {
 			isa = PBXGroup;
 			children = (
+				EB7A23A422E4E8E000C30C08 /* Other VC */,
+				EB7A23A322E4E8B100C30C08 /* Show Items VC */,
+				EB7A23A222E4E87C00C30C08 /* Add Items VC */,
 				EBEF8F7522E40E4F00E63840 /* plist Files */,
 				EB01EB9B22DCF423006DF4ED /* Extensions */,
 				EB01EB9822DCF32A006DF4ED /* Swift files */,
@@ -114,12 +147,6 @@
 				EBC6256022D0192A001C83B5 /* LaunchScreen.storyboard */,
 				EBC6256B22D02021001C83B5 /* SignupViewController.swift */,
 				EB7D450A22DA63A800FD69B2 /* demoViewController.swift */,
-				EB01EBA222DD01BD006DF4ED /* ShowAllLostItemsViewController.swift */,
-				EBF1831922D2DCF500EC112D /* addLostItemViewController.swift */,
-				9BF5793722E13C690037C0DD /* addFoundItemViewController.swift */,
-				EBEF8F7322E397B200E63840 /* ShowLostItemsTableViewCell.swift */,
-				EBEF8F7622E4166400E63840 /* ShowAllFoundItemsViewController.swift */,
-				EBEF8F7A22E4178E00E63840 /* ShowFoundItemTableViewCell.swift */,
 			);
 			path = LostAndFoundApp;
 			sourceTree = "<group>";
@@ -217,6 +244,7 @@
 				EB01EB9A22DCF34A006DF4ED /* userData.swift in Sources */,
 				EB01EB9D22DCF43C006DF4ED /* String_extension.swift in Sources */,
 				EBF1831A22D2DCF500EC112D /* addLostItemViewController.swift in Sources */,
+				EB7A23A622E4E90100C30C08 /* ContactUSViewController.swift in Sources */,
 				EBEF8F7422E397B200E63840 /* ShowLostItemsTableViewCell.swift in Sources */,
 				EBC6255822D01928001C83B5 /* AppDelegate.swift in Sources */,
 				EBEF8F7722E4166400E63840 /* ShowAllFoundItemsViewController.swift in Sources */,

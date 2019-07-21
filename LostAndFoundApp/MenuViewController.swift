@@ -72,5 +72,16 @@ class MenuViewController: UIViewController {
         let nextVC = myStoryBoard.instantiateViewController(withIdentifier: "ShowFoundItemVC") as! ShowAllFoundItemsViewController
         self.present(nextVC, animated: true, completion: nil)
     }
+    @IBAction func btn_contactUsClicked(_ sender: Any)
+    {
+        let myStoryBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let nextVC = myStoryBoard.instantiateViewController(withIdentifier: "ContactUSVC") as! ContactUSViewController
+        self.present(nextVC, animated: true, completion: nil)
+    }
+    
+    @IBAction func btn_aboutUsClicked(_ sender: Any)
+    {
+    }
+    
     
 }
