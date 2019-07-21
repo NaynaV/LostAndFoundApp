@@ -84,7 +84,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-943" y="-702"/>
+            <point key="canvasLocation" x="-686" y="-1424"/>
         </scene>
         <!--Show All Lost Items View Controller-->
         <scene sceneID="TJ7-dX-1AY">
@@ -163,7 +163,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WMq-ZF-icL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1313" y="-931"/>
+            <point key="canvasLocation" x="1371" y="-1385"/>
         </scene>
         <!--Title-->
         <scene sceneID="3yc-Gw-i4s">
@@ -370,12 +370,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yd2-pD-TbQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1600.0000000000002" y="-181.47321428571428"/>
+            <point key="canvasLocation" x="2061" y="-1385"/>
         </scene>
         <!--Add Found Item View Controller-->
         <scene sceneID="Mdg-ge-dsP">
             <objects>
-                <viewController id="Q3S-ni-5gt" customClass="addFoundItemViewController" customModule="LostAndFoundApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="addFoundItemVC" id="Q3S-ni-5gt" customClass="addFoundItemViewController" customModule="LostAndFoundApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hWs-e6-EcC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -459,7 +459,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="78G-Qu-t2k" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2686.9565217391305" y="28.794642857142854"/>
+            <point key="canvasLocation" x="2743" y="-1385"/>
         </scene>
         <!--Demo View Controller-->
         <scene sceneID="IEp-HT-9Rm">
@@ -538,19 +538,17 @@
                                 <rect key="frame" x="-9" y="36" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
-                                    <navigationItem title="Menu" id="xkX-mc-aT9"/>
+                                    <navigationItem title="Menu" id="xkX-mc-aT9">
+                                        <barButtonItem key="leftBarButtonItem" image="show-menu-icon" id="P2x-2f-BoX">
+                                            <connections>
+                                                <action selector="btn_menuClicked:" destination="84V-Jz-ROZ" id="jys-wq-nFC"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
                                 </items>
                             </navigationBar>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bts-YV-vPX">
-                                <rect key="frame" x="20" y="80" width="47" height="39"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Menu"/>
-                                <connections>
-                                    <action selector="btn_menu:" destination="84V-Jz-ROZ" eventType="touchUpInside" id="ZPd-ih-BhZ"/>
-                                </connections>
-                            </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wZe-Uu-xZh">
-                                <rect key="frame" x="0.0" y="113" width="245" height="516"/>
+                                <rect key="frame" x="0.0" y="80" width="225" height="425"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cIR-Oa-NBf">
@@ -569,6 +567,9 @@
                                         <state key="normal" title="Add found item">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="btn_addFoundItem:" destination="84V-Jz-ROZ" eventType="touchUpInside" id="ruM-Xn-OLc"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aku-ps-itu">
                                         <rect key="frame" x="76" y="122" width="75" height="30"/>
@@ -600,12 +601,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vRi-fe-LEu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="407" y="-1385"/>
+            <point key="canvasLocation" x="405.79710144927537" y="-1385.4910714285713"/>
         </scene>
     </scenes>
     <resources>
         <image name="icons8-email-open-64" width="64" height="64"/>
         <image name="icons8-password-48" width="48" height="48"/>
         <image name="login_icon" width="163" height="159"/>
+        <image name="show-menu-icon" width="182" height="176"/>
     </resources>
 </document>

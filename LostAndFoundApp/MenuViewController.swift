@@ -15,15 +15,13 @@ class MenuViewController: UIViewController {
     @IBOutlet weak var menuview: UIView!
     
     
-    
-     var i:Int=0
-    @IBAction func btn_menu(_ sender: UIButton)
+    @IBAction func btn_menuClicked(_ sender: UIBarButtonItem)
     {
         if(i==0)
         {
             UIView.animate(withDuration: 0.4, animations:{
                 self.menuview.frame = CGRect(x: self.menuview.frame.origin.x + self.menuview.bounds.width, y: self.menuview.frame.origin.y, width:self.menuview.bounds.width, height: self.menuview.bounds.height)
-            
+                
                 
             })
             i=1
@@ -32,14 +30,16 @@ class MenuViewController: UIViewController {
             UIView.animate(withDuration: 0.4, animations:{
                 self.menuview.frame = CGRect(x: self.menuview.frame.origin.x - self.menuview.bounds.width, y: self.menuview.frame.origin.y, width:self.menuview.bounds.width, height: self.menuview.bounds.height)
                 
-            
+                
             })
             i=0
             print(self.menuview .frame.origin.x)
         }
 
-    
     }
+    
+     var i:Int=0
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -57,5 +57,14 @@ class MenuViewController: UIViewController {
         let nextVC = myStoryBoard.instantiateViewController(withIdentifier: "addLostItemVC") as! addLostItemViewController
         self.present(nextVC, animated: true, completion: nil)
     }
+    
+    @IBAction func btn_addFoundItem(_ sender: UIButton)
+    {
+        let myStoryBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let nextVC = myStoryBoard.instantiateViewController(withIdentifier: "addFoundItemVC") as! addFoundItemViewController
+        self.present(nextVC, animated: true, completion: nil)
+    }
+    
+    
     
 }

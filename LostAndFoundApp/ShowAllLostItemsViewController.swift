@@ -34,6 +34,11 @@ class ShowAllLostItemsViewController: UIViewController, UITableViewDelegate, UIT
         return 1
     }
     
+   func AddLostItem()
+   {
+    
+    }
+    
    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
    {
        //   return self.students.count

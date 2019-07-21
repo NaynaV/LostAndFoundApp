@@ -187,8 +187,11 @@ self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background1")!
     }
     @IBAction func btn_saveLostItem(_ sender: UIButton)
     {
-    
-    
+       // let itemID : Int = txt_place?.text
+        let itemDes : String = txt_description.text!
+        let itemName : String = txt_itemName.text!
+        let itemCat : String = txt_category.text!
+        
     }
     
     
