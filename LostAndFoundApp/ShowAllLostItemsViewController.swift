@@ -56,7 +56,7 @@ class ShowAllLostItemsViewController: UIViewController, UITableViewDelegate, UIT
         cell.lbl_itemLostdate.text = "Item Category :\(lostItem.ItemLostDate)"
         cell.lbl_itemDes.text = "Item Description :\(lostItem.ItemDescription)"
         cell.lbl_itemLostPlace.text = "Lost Place:\(lostItem.ItemLostPlace)"
-   //cell.lbl_itemImage.image = "\(UIImage.showItem.ItemImage)"
+        cell.lbl_itemImage.image = UIImage(named: (lostItem.ItemImage))
         cell.lbl_itemReward.text = "Reward :\(lostItem.ItemReward)"
         
        
@@ -71,9 +71,9 @@ class ShowAllLostItemsViewController: UIViewController, UITableViewDelegate, UIT
     private func getLostItemData()
     {
         LostItemArray = []
-       LostItemArray.append(Item(ItemName: "Iphone", ItemDescription: "Iphone ^s roseGold", ItemReward: "$40", ItemLostDate: Date(), ItemImage: "hj.png", ItemLostPlace: "graydon hall", ItemLostContact: "236900899"))
+       LostItemArray.append(Item(ItemName: "Iphone", ItemDescription: "Iphone ^s roseGold", ItemReward: "$40", ItemLostDate: Date(), ItemImage: "keyImage", ItemLostPlace: "graydon hall", ItemLostContact: "236900899"))
         
-         LostItemArray.append(Item(ItemName: "cap", ItemDescription: "Nike Cap", ItemReward: "$10", ItemLostDate: Date(), ItemImage: "hj.png", ItemLostPlace: "graydon hall", ItemLostContact: "236900899"))
+         LostItemArray.append(Item(ItemName: "cap", ItemDescription: "Nike Cap", ItemReward: "$10", ItemLostDate: Date(), ItemImage: "purseImage", ItemLostPlace: "graydon hall", ItemLostContact: "236900899"))
     }
    
 }
