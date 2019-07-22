@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import MobileCoreServices
 
-class addFoundItemViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource
+class addFoundItemViewController: UIViewController,UIImagePickerControllerDelegate,UIActionSheetDelegate, UIAlertViewDelegate,UINavigationBarDelegate,UINavigationControllerDelegate, UIPickerViewDataSource, UIPickerViewDelegate
 {
    
 
@@ -27,6 +28,7 @@ class addFoundItemViewController: UIViewController, UIPickerViewDelegate, UIPick
     var category = ["Electronics", "Kitchen", "Clothes", "Accesories"]
     
     let datePicker = UIDatePicker()
+    var CategoryPicker = UIPickerView()
     // var datePicker = UIDatePicker()
     var rdate  = NSDate()
     var rtime = NSTimeZone()
@@ -37,7 +39,8 @@ class addFoundItemViewController: UIViewController, UIPickerViewDelegate, UIPick
         super.viewDidLoad()
         showDatePicker()
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background1")!)
-       // imageController.delegate = self
+        showDatePicker()
+    
         categoryPicker.dataSource = self
         categoryPicker.delegate = self
         

@@ -10,37 +10,25 @@ import UIKit
 
 import WebKit
 
-class AboutUsViewController: UIViewController {
 
-   
+class AboutUsViewController:  UIViewController, WKUIDelegate {
     
+    var webView: WKWebView!
     
-    @IBOutlet weak var webView_aboutUs: WKWebView!
-    
-    
+    override func loadView() {
+        let webConfiguration = WKWebViewConfiguration()
+        webView = WKWebView(frame: .zero, configuration: webConfiguration)
+        webView.uiDelegate = self
+        view = webView
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-      self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background1")!);
-        loadFromFile()
-    }
-    
-    func loadFromFile()
-    {
+        
         let localfilePath = Bundle.main.url(forResource: "aboutus", withExtension: "html")
         let myRequest = URLRequest(url: localfilePath!)
-        webView_aboutUs.load(myRequest)
+        webView.load(myRequest)
+    }
     
-        
-    }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    
 }
