@@ -35,15 +35,21 @@ class addLostItemViewController: UIViewController,UIImagePickerControllerDelegat
     var img_data = NSData()
       //var category = ["General", "Electronic", "Materialistic"]
     
+    let datePicker = UIDatePicker()
+    // var datePicker = UIDatePicker()
+    var rdate  = NSDate()
+    var rtime = NSTimeZone()
+    var Response2: AnyObject!
     
+    var Response1: AnyObject!
 
     var category = ["Electronics", "Kitchen", "Clothes", "Accesories"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background1")!)
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background1")!)
         
-    
+        showDatePicker()
         imageController.delegate = self
         categoryPicker.dataSource = self
         categoryPicker.delegate = self
@@ -175,8 +181,6 @@ self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background1")!
         return category.count
     }
 
-   
-    
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return category[row]
@@ -190,6 +194,36 @@ self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background1")!
         print(category[row])
     }
     
+  
+    func showDatePicker(){
+        //Formate Date
+        datePicker.datePickerMode = .date
+        
+        //ToolBar
+        let toolbar = UIToolbar();
+        toolbar.sizeToFit()
+        let doneButton = UIBarButtonItem(title: "Done", style: .plain, target: self, action: #selector(donedatePicker));
+        let spaceButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.flexibleSpace, target: nil, action: nil)
+        let cancelButton = UIBarButtonItem(title: "Cancel", style: .plain, target: self, action: #selector(cancelDatePicker));
+        
+        toolbar.setItems([doneButton,spaceButton,cancelButton], animated: false)
+        
+        txt_dateLostItem.inputAccessoryView = toolbar
+        txt_dateLostItem.inputView = datePicker
+        
+    }
+    
+    @objc func donedatePicker(){
+        
+        let formatter = DateFormatter()
+        formatter.dateFormat = "dd/MM/yyyy"
+        txt_dateLostItem.text = formatter.string(from: datePicker.date)
+        self.view.endEditing(true)
+    }
+    
+    @objc func cancelDatePicker(){
+        self.view.endEditing(true)
+    }
     
     @IBAction func btn_back(_ sender: Any) {
     
@@ -200,14 +234,7 @@ self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background1")!
         self.navigationController?.pushViewController(dashboardVC, animated: true)
     
     }
-    @IBAction func btn_saveLostItem(_ sender: UIButton)
-    {
-       // let itemID : Int = txt_place?.text
-        let itemDes : String = txt_description.text!
-        let itemName : String = txt_itemName.text!
-       // let itemCat : String = txt_category.text!
-        
-    }
+    
     
     
 }
