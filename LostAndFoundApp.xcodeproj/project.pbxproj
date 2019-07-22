@@ -30,6 +30,8 @@
 		EB7A23E022E534A500C30C08 /* btn_add_bank_and_save_275659.png in Resources */ = {isa = PBXBuildFile; fileRef = EB7A23DC22E534A500C30C08 /* btn_add_bank_and_save_275659.png */; };
 		EB7A23E222E5464D00C30C08 /* about.png in Resources */ = {isa = PBXBuildFile; fileRef = EB7A23E122E5464D00C30C08 /* about.png */; };
 		EB7A23E422E54DBC00C30C08 /* userlogin.png in Resources */ = {isa = PBXBuildFile; fileRef = EB7A23E322E54DBC00C30C08 /* userlogin.png */; };
+		EB7A23E622E54F3C00C30C08 /* images-4.png in Resources */ = {isa = PBXBuildFile; fileRef = EB7A23E522E54F3B00C30C08 /* images-4.png */; };
+		EB7A23E822E54FE000C30C08 /* password.png in Resources */ = {isa = PBXBuildFile; fileRef = EB7A23E722E54FE000C30C08 /* password.png */; };
 		EB7D450B22DA63A800FD69B2 /* demoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7D450A22DA63A800FD69B2 /* demoViewController.swift */; };
 		EBC6255822D01928001C83B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC6255722D01928001C83B5 /* AppDelegate.swift */; };
 		EBC6255A22D01928001C83B5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC6255922D01928001C83B5 /* LoginViewController.swift */; };
@@ -70,6 +72,8 @@
 		EB7A23DC22E534A500C30C08 /* btn_add_bank_and_save_275659.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = btn_add_bank_and_save_275659.png; path = ../../../btn_add_bank_and_save_275659.png; sourceTree = "<group>"; };
 		EB7A23E122E5464D00C30C08 /* about.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = about.png; path = ../../../about.png; sourceTree = "<group>"; };
 		EB7A23E322E54DBC00C30C08 /* userlogin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = userlogin.png; path = ../../../userlogin.png; sourceTree = "<group>"; };
+		EB7A23E522E54F3B00C30C08 /* images-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "images-4.png"; path = "../../../images-4.png"; sourceTree = "<group>"; };
+		EB7A23E722E54FE000C30C08 /* password.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = password.png; path = ../../../password.png; sourceTree = "<group>"; };
 		EB7D450A22DA63A800FD69B2 /* demoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = demoViewController.swift; sourceTree = "<group>"; };
 		EBC6255422D01928001C83B5 /* LostAndFoundApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LostAndFoundApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBC6255722D01928001C83B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -167,7 +171,9 @@
 				EB7A23D022E5324A00C30C08 /* logo.jpeg */,
 				EB7A23DA22E534A400C30C08 /* contact.png */,
 				EB7A23E122E5464D00C30C08 /* about.png */,
+				EB7A23E722E54FE000C30C08 /* password.png */,
 				EB7A23DC22E534A500C30C08 /* btn_add_bank_and_save_275659.png */,
+				EB7A23E522E54F3B00C30C08 /* images-4.png */,
 				EB7A23E322E54DBC00C30C08 /* userlogin.png */,
 				EB7A23DB22E534A400C30C08 /* icon-form-1.png */,
 				EB7A23D922E534A400C30C08 /* icon.png */,
@@ -287,6 +293,7 @@
 			files = (
 				EB7A23DD22E534A500C30C08 /* icon.png in Resources */,
 				EB7A23DF22E534A500C30C08 /* icon-form-1.png in Resources */,
+				EB7A23E822E54FE000C30C08 /* password.png in Resources */,
 				EB7A23D722E5324B00C30C08 /* menuImageIcon.png in Resources */,
 				EB7A23D622E5324B00C30C08 /* logo.jpeg in Resources */,
 				EB7A23CB22E506BB00C30C08 /* aboutUs.html in Resources */,
@@ -297,6 +304,7 @@
 				EB7A23D322E5324B00C30C08 /* backbutton.png in Resources */,
 				EBC6255F22D0192A001C83B5 /* Assets.xcassets in Resources */,
 				EB7A23D522E5324B00C30C08 /* usericon.png in Resources */,
+				EB7A23E622E54F3C00C30C08 /* images-4.png in Resources */,
 				EBC6255D22D01928001C83B5 /* Main.storyboard in Resources */,
 				EBEF8F7222E394DA00E63840 /* LostItem.plist in Resources */,
 				EB7A23DE22E534A500C30C08 /* contact.png in Resources */,

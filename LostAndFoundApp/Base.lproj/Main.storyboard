@@ -26,7 +26,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tZT-ZM-8sP">
-                                <rect key="frame" x="149" y="492" width="182" height="31"/>
+                                <rect key="frame" x="154" y="501" width="182" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
@@ -36,12 +36,12 @@
                                 <rect key="frame" x="82" y="573" width="49" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </switch>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icons8-email-open-64" translatesAutoresizingMaskIntoConstraints="NO" id="3tI-10-kHb">
-                                <rect key="frame" x="82" y="428" width="30" height="35"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="images-4.png" translatesAutoresizingMaskIntoConstraints="NO" id="3tI-10-kHb">
+                                <rect key="frame" x="76" y="424" width="59" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icons8-password-48" translatesAutoresizingMaskIntoConstraints="NO" id="BfC-ve-obN">
-                                <rect key="frame" x="82" y="494" width="30" height="28"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="password.png" translatesAutoresizingMaskIntoConstraints="NO" id="BfC-ve-obN">
+                                <rect key="frame" x="76" y="492" width="60" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Remember me ?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dht-8B-BjP">
@@ -64,7 +64,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vhj-ic-N7J">
-                                <rect key="frame" x="168" y="678" width="106" height="47"/>
+                                <rect key="frame" x="160" y="655" width="106" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <inset key="imageEdgeInsets" minX="-1" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -1064,10 +1064,10 @@
         <image name="contact.png" width="1024" height="1024"/>
         <image name="found-item-tag-stock-graphic" width="500" height="401"/>
         <image name="icon-form-1.png" width="256" height="256"/>
-        <image name="icons8-email-open-64" width="64" height="64"/>
-        <image name="icons8-password-48" width="48" height="48"/>
+        <image name="images-4.png" width="218" height="221"/>
         <image name="images-5" width="157" height="159"/>
         <image name="logo" width="705" height="354"/>
+        <image name="password.png" width="220" height="219"/>
         <image name="userlogin.png" width="208" height="213"/>
     </resources>
     <inferredMetricsTieBreakers>
