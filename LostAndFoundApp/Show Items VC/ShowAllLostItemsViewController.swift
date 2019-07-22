@@ -52,13 +52,13 @@ class ShowAllLostItemsViewController: UIViewController, UITableViewDelegate, UIT
         
         
      
-        cell.lbl_ItemName.text = "Name : \(lostItem.ItemName)"
-        cell.lbl_itemLostdate.text = "Lost Date : \(lostItem.ItemLostDate)"
-        cell.lbl_itemDes.text = "Description : \(lostItem.ItemDescription)"
-        cell.lbl_itemLostPlace.text = "Place : \(lostItem.ItemLostPlace)"
+        cell.lbl_ItemName.text = "\(lostItem.ItemName)"
+        cell.lbl_itemLostdate.text = "\(lostItem.ItemLostDate)"
+        cell.lbl_itemDes.text = "\(lostItem.ItemDescription)"
+        cell.lbl_itemLostPlace.text = "\(lostItem.ItemLostPlace)"
         cell.lbl_itemImage.image = UIImage(named: (lostItem.ItemImage))
-        cell.lbl_itemReward.text = "Reward : \(lostItem.ItemReward)"
-        cell.lbl_itemCat.text = "Category : \(lostItem.ItemCat)"
+        cell.lbl_itemReward.text = "\(lostItem.ItemReward)"
+        cell.lbl_itemCat.text = "\(lostItem.ItemCat)"
        
         
         return cell
