@@ -45,6 +45,7 @@
 		EBEF8F7722E4166400E63840 /* ShowAllFoundItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEF8F7622E4166400E63840 /* ShowAllFoundItemsViewController.swift */; };
 		EBEF8F7922E4168900E63840 /* FoundItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEF8F7822E4168900E63840 /* FoundItems.swift */; };
 		EBEF8F7B22E4178E00E63840 /* ShowFoundItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEF8F7A22E4178E00E63840 /* ShowFoundItemTableViewCell.swift */; };
+		EBF17E6822E6004D009E062D /* aboutus.html in Resources */ = {isa = PBXBuildFile; fileRef = EBF17E6722E6004D009E062D /* aboutus.html */; };
 		EBF1831A22D2DCF500EC112D /* addLostItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF1831922D2DCF500EC112D /* addLostItemViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -89,6 +90,7 @@
 		EBEF8F7622E4166400E63840 /* ShowAllFoundItemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowAllFoundItemsViewController.swift; sourceTree = "<group>"; };
 		EBEF8F7822E4168900E63840 /* FoundItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoundItems.swift; sourceTree = "<group>"; };
 		EBEF8F7A22E4178E00E63840 /* ShowFoundItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowFoundItemTableViewCell.swift; sourceTree = "<group>"; };
+		EBF17E6722E6004D009E062D /* aboutus.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = aboutus.html; path = "../../../../Downloads/aboutus_L&F/aboutus.html"; sourceTree = "<group>"; };
 		EBF1831922D2DCF500EC112D /* addLostItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addLostItemViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -148,6 +150,7 @@
 			children = (
 				EB7A23A522E4E90100C30C08 /* ContactUSViewController.swift */,
 				EB7A23C422E4F41B00C30C08 /* AboutUsViewController.swift */,
+				EBF17E6722E6004D009E062D /* aboutus.html */,
 				EB7A23CA22E506BB00C30C08 /* aboutUs.html */,
 			);
 			path = "Other VC";
@@ -303,6 +306,7 @@
 				EB7A23E022E534A500C30C08 /* btn_add_bank_and_save_275659.png in Resources */,
 				EB7A23D322E5324B00C30C08 /* backbutton.png in Resources */,
 				EBC6255F22D0192A001C83B5 /* Assets.xcassets in Resources */,
+				EBF17E6822E6004D009E062D /* aboutus.html in Resources */,
 				EB7A23D522E5324B00C30C08 /* usericon.png in Resources */,
 				EB7A23E622E54F3C00C30C08 /* images-4.png in Resources */,
 				EBC6255D22D01928001C83B5 /* Main.storyboard in Resources */,

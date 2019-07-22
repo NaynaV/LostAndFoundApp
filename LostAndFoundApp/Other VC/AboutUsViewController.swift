@@ -27,7 +27,7 @@ class AboutUsViewController: UIViewController {
     
     func loadFromFile()
     {
-        let localfilePath = Bundle.main.url(forResource: "aboutUs", withExtension: "html")
+        let localfilePath = Bundle.main.url(forResource: "aboutus", withExtension: "html")
         let myRequest = URLRequest(url: localfilePath!)
         webView_aboutUs.load(myRequest)
     

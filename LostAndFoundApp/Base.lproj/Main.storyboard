@@ -30,7 +30,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gwJ-ch-XSY">
                                 <rect key="frame" x="82" y="573" width="49" height="31"/>
@@ -59,7 +59,7 @@
                                     <action selector="btnSignup:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KUB-0D-KBr"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="userlogin.png" translatesAutoresizingMaskIntoConstraints="NO" id="jIX-np-yi9">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="jIX-np-yi9">
                                 <rect key="frame" x="93" y="134" width="238" height="201"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -1067,8 +1067,8 @@
         <image name="images-4.png" width="218" height="221"/>
         <image name="images-5" width="157" height="159"/>
         <image name="logo" width="705" height="354"/>
+        <image name="logo.jpeg" width="150" height="150"/>
         <image name="password.png" width="220" height="219"/>
-        <image name="userlogin.png" width="208" height="213"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="DTZ-JS-NXO"/>
