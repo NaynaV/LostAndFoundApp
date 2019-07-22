@@ -40,7 +40,6 @@ class addFoundItemViewController: UIViewController,UIImagePickerControllerDelega
         showDatePicker()
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background1")!)
         showDatePicker()
-    
         categoryPicker.dataSource = self
         categoryPicker.delegate = self
         

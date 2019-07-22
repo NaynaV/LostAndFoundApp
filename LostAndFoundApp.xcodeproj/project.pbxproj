@@ -17,7 +17,6 @@
 		EB7A23C322E4EE2600C30C08 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB7A23C222E4EE2500C30C08 /* MessageUI.framework */; };
 		EB7A23C522E4F41B00C30C08 /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7A23C422E4F41B00C30C08 /* AboutUsViewController.swift */; };
 		EB7A23C722E4F50300C30C08 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB7A23C622E4F50300C30C08 /* WebKit.framework */; };
-		EB7A23CB22E506BB00C30C08 /* aboutUs.html in Resources */ = {isa = PBXBuildFile; fileRef = EB7A23CA22E506BB00C30C08 /* aboutUs.html */; };
 		EB7A23D322E5324B00C30C08 /* backbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = EB7A23CD22E5324A00C30C08 /* backbutton.png */; };
 		EB7A23D422E5324B00C30C08 /* passwordicon.png in Resources */ = {isa = PBXBuildFile; fileRef = EB7A23CE22E5324A00C30C08 /* passwordicon.png */; };
 		EB7A23D522E5324B00C30C08 /* usericon.png in Resources */ = {isa = PBXBuildFile; fileRef = EB7A23CF22E5324A00C30C08 /* usericon.png */; };
@@ -46,6 +45,8 @@
 		EBEF8F7922E4168900E63840 /* FoundItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEF8F7822E4168900E63840 /* FoundItems.swift */; };
 		EBEF8F7B22E4178E00E63840 /* ShowFoundItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEF8F7A22E4178E00E63840 /* ShowFoundItemTableViewCell.swift */; };
 		EBF17E6822E6004D009E062D /* aboutus.html in Resources */ = {isa = PBXBuildFile; fileRef = EBF17E6722E6004D009E062D /* aboutus.html */; };
+		EBF17E6A22E65DF3009E062D /* logoL&F.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EBF17E6922E65DF2009E062D /* logoL&F.jpg */; };
+		EBF17E6C22E65F63009E062D /* contactusicon.png in Resources */ = {isa = PBXBuildFile; fileRef = EBF17E6B22E65F63009E062D /* contactusicon.png */; };
 		EBF1831A22D2DCF500EC112D /* addLostItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF1831922D2DCF500EC112D /* addLostItemViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -60,7 +61,6 @@
 		EB7A23C222E4EE2500C30C08 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		EB7A23C422E4F41B00C30C08 /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
 		EB7A23C622E4F50300C30C08 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
-		EB7A23CA22E506BB00C30C08 /* aboutUs.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = aboutUs.html; path = ../../../../Desktop/aboutUs.html; sourceTree = "<group>"; };
 		EB7A23CD22E5324A00C30C08 /* backbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backbutton.png; sourceTree = "<group>"; };
 		EB7A23CE22E5324A00C30C08 /* passwordicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = passwordicon.png; sourceTree = "<group>"; };
 		EB7A23CF22E5324A00C30C08 /* usericon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = usericon.png; sourceTree = "<group>"; };
@@ -91,6 +91,8 @@
 		EBEF8F7822E4168900E63840 /* FoundItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoundItems.swift; sourceTree = "<group>"; };
 		EBEF8F7A22E4178E00E63840 /* ShowFoundItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowFoundItemTableViewCell.swift; sourceTree = "<group>"; };
 		EBF17E6722E6004D009E062D /* aboutus.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = aboutus.html; path = "../../../../Downloads/aboutus_L&F/aboutus.html"; sourceTree = "<group>"; };
+		EBF17E6922E65DF2009E062D /* logoL&F.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "logoL&F.jpg"; path = "../../../../Desktop/logoL&F.jpg"; sourceTree = "<group>"; };
+		EBF17E6B22E65F63009E062D /* contactusicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = contactusicon.png; path = ../contactusicon.png; sourceTree = "<group>"; };
 		EBF1831922D2DCF500EC112D /* addLostItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addLostItemViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -151,7 +153,6 @@
 				EB7A23A522E4E90100C30C08 /* ContactUSViewController.swift */,
 				EB7A23C422E4F41B00C30C08 /* AboutUsViewController.swift */,
 				EBF17E6722E6004D009E062D /* aboutus.html */,
-				EB7A23CA22E506BB00C30C08 /* aboutUs.html */,
 			);
 			path = "Other VC";
 			sourceTree = "<group>";
@@ -168,6 +169,8 @@
 		EB7A23CC22E5324A00C30C08 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				EBF17E6B22E65F63009E062D /* contactusicon.png */,
+				EBF17E6922E65DF2009E062D /* logoL&F.jpg */,
 				EB7A23CD22E5324A00C30C08 /* backbutton.png */,
 				EB7A23CE22E5324A00C30C08 /* passwordicon.png */,
 				EB7A23CF22E5324A00C30C08 /* usericon.png */,
@@ -297,14 +300,15 @@
 				EB7A23DD22E534A500C30C08 /* icon.png in Resources */,
 				EB7A23DF22E534A500C30C08 /* icon-form-1.png in Resources */,
 				EB7A23E822E54FE000C30C08 /* password.png in Resources */,
+				EBF17E6C22E65F63009E062D /* contactusicon.png in Resources */,
 				EB7A23D722E5324B00C30C08 /* menuImageIcon.png in Resources */,
 				EB7A23D622E5324B00C30C08 /* logo.jpeg in Resources */,
-				EB7A23CB22E506BB00C30C08 /* aboutUs.html in Resources */,
 				EBC6256222D0192A001C83B5 /* LaunchScreen.storyboard in Resources */,
 				EB7A23E422E54DBC00C30C08 /* userlogin.png in Resources */,
 				EB7A23E222E5464D00C30C08 /* about.png in Resources */,
 				EB7A23E022E534A500C30C08 /* btn_add_bank_and_save_275659.png in Resources */,
 				EB7A23D322E5324B00C30C08 /* backbutton.png in Resources */,
+				EBF17E6A22E65DF3009E062D /* logoL&F.jpg in Resources */,
 				EBC6255F22D0192A001C83B5 /* Assets.xcassets in Resources */,
 				EBF17E6822E6004D009E062D /* aboutus.html in Resources */,
 				EB7A23D522E5324B00C30C08 /* usericon.png in Resources */,
