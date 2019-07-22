@@ -824,7 +824,7 @@
                                 </items>
                             </navigationBar>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wZe-Uu-xZh">
-                                <rect key="frame" x="0.0" y="80" width="225" height="425"/>
+                                <rect key="frame" x="0.0" y="80" width="225" height="385"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cIR-Oa-NBf">
@@ -840,7 +840,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HrD-FQ-paZ">
-                                        <rect key="frame" x="88" y="81" width="98" height="36"/>
+                                        <rect key="frame" x="89" y="73" width="98" height="36"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="Found Item">
@@ -850,9 +850,21 @@
                                             <action selector="btn_addFoundItem:" destination="84V-Jz-ROZ" eventType="touchUpInside" id="ruM-Xn-OLc"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OKS-k1-DRm">
-                                        <rect key="frame" x="83" y="175" width="85" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aku-ps-itu">
+                                        <rect key="frame" x="91" y="131" width="95" height="36"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Lost Items ">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="388-Sf-9aU" kind="showDetail" id="jfh-Sm-TMR"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OKS-k1-DRm">
+                                        <rect key="frame" x="84" y="193" width="112" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="Found Items">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -860,16 +872,16 @@
                                             <action selector="btn_showFoundItems:" destination="84V-Jz-ROZ" eventType="touchUpInside" id="gCZ-4t-bos"/>
                                         </connections>
                                     </button>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Inq-Dc-i8a">
-                                        <rect key="frame" x="16" y="175" width="39" height="36"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon-form-1.png" translatesAutoresizingMaskIntoConstraints="NO" id="Inq-Dc-i8a">
+                                        <rect key="frame" x="22" y="191" width="54" height="42"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QWv-3c-cc0">
-                                        <rect key="frame" x="16" y="231" width="39" height="36"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="contact.png" translatesAutoresizingMaskIntoConstraints="NO" id="QWv-3c-cc0">
+                                        <rect key="frame" x="30" y="267" width="39" height="36"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kQD-Gm-cpg">
-                                        <rect key="frame" x="16" y="279" width="39" height="36"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="about.png" translatesAutoresizingMaskIntoConstraints="NO" id="kQD-Gm-cpg">
+                                        <rect key="frame" x="30" y="321" width="39" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <view alpha="0.84999999999999998" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GPE-En-zsr">
@@ -886,8 +898,9 @@
                                         <rect key="contentStretch" x="0.0" y="0.0" width="0.34999999999999998" height="0.84999999999999998"/>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xhF-o7-cOD">
-                                        <rect key="frame" x="76" y="231" width="92" height="30"/>
+                                        <rect key="frame" x="82" y="267" width="112" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="Contact us">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -896,33 +909,23 @@
                                         </connections>
                                     </button>
                                     <view alpha="0.85000002384185791" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cbe-AF-b3Z">
-                                        <rect key="frame" x="1" y="212" width="225" height="11"/>
+                                        <rect key="frame" x="0.0" y="254" width="225" height="-1"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <rect key="contentStretch" x="0.0" y="0.0" width="0.34999999999999998" height="0.84999999999999998"/>
                                     </view>
                                     <view alpha="0.85000002384185791" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TEA-ft-exb">
-                                        <rect key="frame" x="1" y="269" width="225" height="11"/>
+                                        <rect key="frame" x="0.0" y="311" width="225" height="-1"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <rect key="contentStretch" x="0.0" y="0.0" width="0.34999999999999998" height="0.84999999999999998"/>
                                     </view>
                                     <view alpha="0.85000002384185791" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bIX-bN-K24">
-                                        <rect key="frame" x="0.0" y="174" width="225" height="-1"/>
+                                        <rect key="frame" x="0.0" y="178" width="225" height="-1"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <rect key="contentStretch" x="0.0" y="0.0" width="0.34999999999999998" height="0.84999999999999998"/>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1zI-4f-hU6">
-                                        <rect key="frame" x="80" y="279" width="64" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="About Us">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="btn_aboutUsClicked:" destination="84V-Jz-ROZ" eventType="touchUpInside" id="42a-6e-4bR"/>
-                                        </connections>
-                                    </button>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="btn_add_bank_and_save_275659.png" translatesAutoresizingMaskIntoConstraints="NO" id="OF1-tl-fNN">
                                         <rect key="frame" x="30" y="9" width="39" height="41"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -931,19 +934,19 @@
                                         <rect key="frame" x="30" y="71" width="39" height="41"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lWL-0R-Zlt">
-                                        <rect key="frame" x="30" y="131" width="39" height="36"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon-form-1.png" translatesAutoresizingMaskIntoConstraints="NO" id="lWL-0R-Zlt">
+                                        <rect key="frame" x="22" y="128" width="54" height="42"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aku-ps-itu">
-                                        <rect key="frame" x="91" y="131" width="95" height="36"/>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1zI-4f-hU6">
+                                        <rect key="frame" x="91" y="325" width="82" height="36"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <state key="normal" title="Lost Items ">
+                                        <state key="normal" title="About Us">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <segue destination="388-Sf-9aU" kind="showDetail" id="jfh-Sm-TMR"/>
+                                            <action selector="btn_aboutUsClicked:" destination="84V-Jz-ROZ" eventType="touchUpInside" id="42a-6e-4bR"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -963,8 +966,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="about.png" width="491.51998901367188" height="491.51998901367188"/>
         <image name="btn_add_bank_and_save_275659.png" width="491.51998901367188" height="491.51998901367188"/>
+        <image name="contact.png" width="1024" height="1024"/>
         <image name="found-item-tag-stock-graphic" width="500" height="401"/>
+        <image name="icon-form-1.png" width="256" height="256"/>
         <image name="icons8-email-open-64" width="64" height="64"/>
         <image name="icons8-password-48" width="48" height="48"/>
         <image name="images-5" width="157" height="159"/>
