@@ -190,9 +190,13 @@ class addLostItemViewController: UIViewController,UIImagePickerControllerDelegat
     func pickerView( pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
        txt_category.text = category[row]
         self.view.endEditing(false)
-        
-        print(category[row])
+       
     }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+    txt_category.text = category[row]
+    self.txt_category.resignFirstResponder()
+}
     
   
     func showDatePicker(){
