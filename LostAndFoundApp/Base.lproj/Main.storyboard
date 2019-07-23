@@ -967,6 +967,7 @@
                                     <navigationItem title="About Us" id="r5g-sU-dgX">
                                         <barButtonItem key="leftBarButtonItem" title="&lt;Back" id="Rp1-nH-fPT">
                                             <connections>
+                                                <action selector="btn_back:" destination="CEA-Ve-EZt" id="s4X-Po-bGT"/>
                                                 <segue destination="84V-Jz-ROZ" kind="presentation" id="lAD-mF-s7P"/>
                                             </connections>
                                         </barButtonItem>
@@ -983,7 +984,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FEw-1b-qbg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4805.7971014492759" y="-1414.2857142857142"/>
+            <point key="canvasLocation" x="5048" y="-1537"/>
         </scene>
         <!--Demo View Controller-->
         <scene sceneID="IEp-HT-9Rm">
@@ -1232,6 +1233,6 @@
         <image name="password.png" width="220" height="219"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="DTZ-JS-NXO"/>
+        <segue reference="lAD-mF-s7P"/>
     </inferredMetricsTieBreakers>
 </document>

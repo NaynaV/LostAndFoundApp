@@ -28,5 +28,8 @@ class AboutUsViewController:  UIViewController, WKUIDelegate {
         webView.load(myRequest)
     }
     
+    @IBAction func btn_back(_ sender: UIBarButtonItem)
+    {
+    }
     
 }

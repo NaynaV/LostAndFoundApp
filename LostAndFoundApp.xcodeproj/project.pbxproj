@@ -32,6 +32,8 @@
 		EB8BC40722E7AD0A0047E828 /* userlogin.png in Resources */ = {isa = PBXBuildFile; fileRef = EB8BC3FB22E7AD0A0047E828 /* userlogin.png */; };
 		EB8BC40822E7AD0A0047E828 /* about.png in Resources */ = {isa = PBXBuildFile; fileRef = EB8BC3FC22E7AD0A0047E828 /* about.png */; };
 		EB8BC40922E7AD0A0047E828 /* loginIcon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EB8BC3FD22E7AD0A0047E828 /* loginIcon.jpg */; };
+		EB8BC40B22E7AE5B0047E828 /* cap.png in Resources */ = {isa = PBXBuildFile; fileRef = EB8BC40A22E7AE5B0047E828 /* cap.png */; };
+		EB8BC40D22E7AE670047E828 /* ring.png in Resources */ = {isa = PBXBuildFile; fileRef = EB8BC40C22E7AE670047E828 /* ring.png */; };
 		EBC6255822D01928001C83B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC6255722D01928001C83B5 /* AppDelegate.swift */; };
 		EBC6255A22D01928001C83B5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC6255922D01928001C83B5 /* LoginViewController.swift */; };
 		EBC6255D22D01928001C83B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBC6255B22D01928001C83B5 /* Main.storyboard */; };
@@ -73,6 +75,8 @@
 		EB8BC3FB22E7AD0A0047E828 /* userlogin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = userlogin.png; sourceTree = "<group>"; };
 		EB8BC3FC22E7AD0A0047E828 /* about.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = about.png; sourceTree = "<group>"; };
 		EB8BC3FD22E7AD0A0047E828 /* loginIcon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = loginIcon.jpg; sourceTree = "<group>"; };
+		EB8BC40A22E7AE5B0047E828 /* cap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cap.png; sourceTree = "<group>"; };
+		EB8BC40C22E7AE670047E828 /* ring.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ring.png; sourceTree = "<group>"; };
 		EBC6255422D01928001C83B5 /* LostAndFoundApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LostAndFoundApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBC6255722D01928001C83B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBC6255922D01928001C83B5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -169,6 +173,8 @@
 				EB8BC3F422E7AD0A0047E828 /* icon-form-1.png */,
 				EB8BC3F522E7AD0A0047E828 /* contact.png */,
 				EB8BC3F622E7AD0A0047E828 /* password.png */,
+				EB8BC40C22E7AE670047E828 /* ring.png */,
+				EB8BC40A22E7AE5B0047E828 /* cap.png */,
 				EB8BC3F722E7AD0A0047E828 /* usericon.png */,
 				EB8BC3F822E7AD0A0047E828 /* logoL&F.jpg */,
 				EB8BC3F922E7AD0A0047E828 /* contactusicon.png */,
@@ -298,7 +304,9 @@
 				EBEF8F7222E394DA00E63840 /* LostItem.plist in Resources */,
 				EB8BC40722E7AD0A0047E828 /* userlogin.png in Resources */,
 				EB8BC40122E7AD0A0047E828 /* contact.png in Resources */,
+				EB8BC40D22E7AE670047E828 /* ring.png in Resources */,
 				EB8BC40322E7AD0A0047E828 /* usericon.png in Resources */,
+				EB8BC40B22E7AE5B0047E828 /* cap.png in Resources */,
 				EB8BC40222E7AD0A0047E828 /* password.png in Resources */,
 				EB8BC40422E7AD0A0047E828 /* logoL&F.jpg in Resources */,
 				EB8BC3FF22E7AD0A0047E828 /* images-4.png in Resources */,
