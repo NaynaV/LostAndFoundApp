@@ -16,6 +16,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        getLostItemData()
+        getFoundItemData()
         return true
     }
 
@@ -41,6 +43,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-
+    func getLostItemData()
+    {
+        ShowAllLostItemsViewController.LostItemArray = []
+        ShowAllLostItemsViewController.LostItemArray.append(Item(ItemName: "Iphone", ItemDescription: "Iphone ^s roseGold", ItemCat : "Electronics", ItemReward: "$40", ItemLostDate: Date(), ItemImage: "keyImage", ItemLostPlace: "graydon hall", ItemLostContact: "236900899"))
+        
+        ShowAllLostItemsViewController.LostItemArray.append(Item(ItemName: "cap", ItemDescription: "Nike Cap", ItemCat: "Clothes", ItemReward: "$10", ItemLostDate: Date(), ItemImage: "purseImage", ItemLostPlace: "graydon hall", ItemLostContact: "236900899"))
+    }
+    func getFoundItemData()
+    {
+        ShowAllFoundItemsViewController.foundItemArray = []
+        ShowAllFoundItemsViewController.foundItemArray.append(FoundItem(fItemName: "key", fItemCat: "Personal", fItemDes: "shhsd", fItemDate: "dsds", fItemPlace: "Lambton College"))
+        ShowAllFoundItemsViewController.foundItemArray.append(FoundItem(fItemName: "Bottel", fItemCat: "Home", fItemDes: "water blue bttel", fItemDate: "sfdss", fItemPlace: "Nanak House"))
+        
+    }
+    
 }
 

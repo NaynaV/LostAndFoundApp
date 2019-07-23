@@ -13,7 +13,7 @@ class ShowAllLostItemsViewController: UIViewController, UITableViewDelegate, UIT
     //var students = [Student]()
 
 
-    var LostItemArray = [Item]()
+    public static var LostItemArray = [Item]()
     
     @IBOutlet weak var tbl_showLostItems: UITableView!
     
@@ -26,8 +26,9 @@ class ShowAllLostItemsViewController: UIViewController, UITableViewDelegate, UIT
     
     self.tbl_showLostItems.delegate = self
     self.tbl_showLostItems.dataSource = self
+    self.tbl_showLostItems.reloadData()
   //  tbl_showLostItems.register(UITableViewCell.self, forCellReuseIdentifier: "cellLostItems")
-    getLostItemData()
+    
 
     }
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -42,13 +43,13 @@ class ShowAllLostItemsViewController: UIViewController, UITableViewDelegate, UIT
    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
    {
        //   return self.students.count
-    return self.LostItemArray.count
+    return ShowAllLostItemsViewController.LostItemArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellLostItems") as! ShowLostItemsTableViewCell
-        let lostItem = self.LostItemArray[indexPath.row]
+        let lostItem = ShowAllLostItemsViewController.LostItemArray[indexPath.row]
         
         
      
@@ -68,13 +69,7 @@ class ShowAllLostItemsViewController: UIViewController, UITableViewDelegate, UIT
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return CGFloat(250)
     }
-    private func getLostItemData()
-    {
-        LostItemArray = []
-        LostItemArray.append(Item(ItemName: "Iphone", ItemDescription: "Iphone ^s roseGold", ItemCat : "Electronics", ItemReward: "$40", ItemLostDate: Date(), ItemImage: "keyImage", ItemLostPlace: "graydon hall", ItemLostContact: "236900899"))
-        
-        LostItemArray.append(Item(ItemName: "cap", ItemDescription: "Nike Cap", ItemCat: "Clothes", ItemReward: "$10", ItemLostDate: Date(), ItemImage: "purseImage", ItemLostPlace: "graydon hall", ItemLostContact: "236900899"))
-    }
+    
     
     
     @IBAction func btn_back(_ sender: UIBarButtonItem)

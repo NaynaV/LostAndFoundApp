@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84BA9B0422E6C79100FB42AE /* logoL&F.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84BA9B0322E6C79000FB42AE /* logoL&F.jpg */; };
+		84BA9B0622E6C7CB00FB42AE /* images-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BA9B0522E6C7CB00FB42AE /* images-4.png */; };
+		84BA9B0822E6C7EF00FB42AE /* password.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BA9B0722E6C7EF00FB42AE /* password.png */; };
+		84BA9B0A22E6C82000FB42AE /* usericon.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BA9B0922E6C81F00FB42AE /* usericon.png */; };
+		84BA9B0C22E6C83F00FB42AE /* icon-form-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BA9B0B22E6C83F00FB42AE /* icon-form-1.png */; };
+		84BA9B0E22E6C85C00FB42AE /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BA9B0D22E6C85C00FB42AE /* icon.png */; };
+		84BA9B1022E6C87400FB42AE /* userlogin.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BA9B0F22E6C87400FB42AE /* userlogin.png */; };
+		84BA9B1222E6C8B300FB42AE /* btn_add_bank_and_save_275659.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BA9B1122E6C8B300FB42AE /* btn_add_bank_and_save_275659.png */; };
+		84BA9B1422E6C8CB00FB42AE /* contact.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BA9B1322E6C8CB00FB42AE /* contact.png */; };
+		84BA9B1622E6C8DF00FB42AE /* contactusicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BA9B1522E6C8DF00FB42AE /* contactusicon.png */; };
+		84BA9B1822E6C90000FB42AE /* about.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BA9B1722E6C90000FB42AE /* about.png */; };
+		84BA9B1A22E6C91700FB42AE /* loginIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BA9B1922E6C91700FB42AE /* loginIcon.png */; };
 		9BF5793822E13C690037C0DD /* addFoundItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF5793722E13C690037C0DD /* addFoundItemViewController.swift */; };
 		EB01EB9722DCF06E006DF4ED /* userInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = EB01EB9622DCF06E006DF4ED /* userInfo.plist */; };
 		EB01EB9A22DCF34A006DF4ED /* userData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB01EB9922DCF34A006DF4ED /* userData.swift */; };
@@ -18,18 +30,6 @@
 		EB7A23C522E4F41B00C30C08 /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7A23C422E4F41B00C30C08 /* AboutUsViewController.swift */; };
 		EB7A23C722E4F50300C30C08 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB7A23C622E4F50300C30C08 /* WebKit.framework */; };
 		EB7D450B22DA63A800FD69B2 /* demoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7D450A22DA63A800FD69B2 /* demoViewController.swift */; };
-		EB8BC3C822E699FD0047E828 /* logoL&F.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EB8BC3BA22E699FD0047E828 /* logoL&F.jpg */; };
-		EB8BC3C922E699FD0047E828 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EB8BC3BB22E699FD0047E828 /* icon.png */; };
-		EB8BC3CB22E699FD0047E828 /* password.png in Resources */ = {isa = PBXBuildFile; fileRef = EB8BC3BD22E699FD0047E828 /* password.png */; };
-		EB8BC3CD22E699FD0047E828 /* contact.png in Resources */ = {isa = PBXBuildFile; fileRef = EB8BC3BF22E699FD0047E828 /* contact.png */; };
-		EB8BC3CE22E699FD0047E828 /* loginIcon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EB8BC3C022E699FD0047E828 /* loginIcon.jpg */; };
-		EB8BC3CF22E699FD0047E828 /* icon-form-1.png in Resources */ = {isa = PBXBuildFile; fileRef = EB8BC3C122E699FD0047E828 /* icon-form-1.png */; };
-		EB8BC3D022E699FD0047E828 /* usericon.png in Resources */ = {isa = PBXBuildFile; fileRef = EB8BC3C222E699FD0047E828 /* usericon.png */; };
-		EB8BC3D122E699FD0047E828 /* btn_add_bank_and_save_275659.png in Resources */ = {isa = PBXBuildFile; fileRef = EB8BC3C322E699FD0047E828 /* btn_add_bank_and_save_275659.png */; };
-		EB8BC3D222E699FD0047E828 /* about.png in Resources */ = {isa = PBXBuildFile; fileRef = EB8BC3C422E699FD0047E828 /* about.png */; };
-		EB8BC3D322E699FD0047E828 /* contactusicon.png in Resources */ = {isa = PBXBuildFile; fileRef = EB8BC3C522E699FD0047E828 /* contactusicon.png */; };
-		EB8BC3D422E699FD0047E828 /* images-4.png in Resources */ = {isa = PBXBuildFile; fileRef = EB8BC3C622E699FD0047E828 /* images-4.png */; };
-		EB8BC3D522E699FD0047E828 /* userlogin.png in Resources */ = {isa = PBXBuildFile; fileRef = EB8BC3C722E699FD0047E828 /* userlogin.png */; };
 		EB8BC3D722E69AA40047E828 /* aboutus.html in Resources */ = {isa = PBXBuildFile; fileRef = EB8BC3D622E69AA40047E828 /* aboutus.html */; };
 		EBC6255822D01928001C83B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC6255722D01928001C83B5 /* AppDelegate.swift */; };
 		EBC6255A22D01928001C83B5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC6255922D01928001C83B5 /* LoginViewController.swift */; };
@@ -47,6 +47,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		84BA9B0322E6C79000FB42AE /* logoL&F.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "logoL&F.jpg"; sourceTree = "<group>"; };
+		84BA9B0522E6C7CB00FB42AE /* images-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "images-4.png"; sourceTree = "<group>"; };
+		84BA9B0722E6C7EF00FB42AE /* password.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = password.png; sourceTree = "<group>"; };
+		84BA9B0922E6C81F00FB42AE /* usericon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = usericon.png; sourceTree = "<group>"; };
+		84BA9B0B22E6C83F00FB42AE /* icon-form-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-form-1.png"; sourceTree = "<group>"; };
+		84BA9B0D22E6C85C00FB42AE /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		84BA9B0F22E6C87400FB42AE /* userlogin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = userlogin.png; sourceTree = "<group>"; };
+		84BA9B1122E6C8B300FB42AE /* btn_add_bank_and_save_275659.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_add_bank_and_save_275659.png; sourceTree = "<group>"; };
+		84BA9B1322E6C8CB00FB42AE /* contact.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = contact.png; sourceTree = "<group>"; };
+		84BA9B1522E6C8DF00FB42AE /* contactusicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = contactusicon.png; sourceTree = "<group>"; };
+		84BA9B1722E6C90000FB42AE /* about.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = about.png; sourceTree = "<group>"; };
+		84BA9B1922E6C91700FB42AE /* loginIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loginIcon.png; sourceTree = "<group>"; };
 		9BF5793722E13C690037C0DD /* addFoundItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addFoundItemViewController.swift; sourceTree = "<group>"; };
 		EB01EB9622DCF06E006DF4ED /* userInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = userInfo.plist; sourceTree = "<group>"; };
 		EB01EB9922DCF34A006DF4ED /* userData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userData.swift; sourceTree = "<group>"; };
@@ -58,18 +70,6 @@
 		EB7A23C422E4F41B00C30C08 /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
 		EB7A23C622E4F50300C30C08 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		EB7D450A22DA63A800FD69B2 /* demoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = demoViewController.swift; sourceTree = "<group>"; };
-		EB8BC3BA22E699FD0047E828 /* logoL&F.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "logoL&F.jpg"; path = "../../../../Desktop/logoL&F.jpg"; sourceTree = "<group>"; };
-		EB8BC3BB22E699FD0047E828 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = ../../../icon.png; sourceTree = "<group>"; };
-		EB8BC3BD22E699FD0047E828 /* password.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = password.png; path = ../../../password.png; sourceTree = "<group>"; };
-		EB8BC3BF22E699FD0047E828 /* contact.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = contact.png; path = ../../../contact.png; sourceTree = "<group>"; };
-		EB8BC3C022E699FD0047E828 /* loginIcon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = loginIcon.jpg; path = ../../../../.Trash/loginIcon.jpg; sourceTree = "<group>"; };
-		EB8BC3C122E699FD0047E828 /* icon-form-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-form-1.png"; path = "../../../icon-form-1.png"; sourceTree = "<group>"; };
-		EB8BC3C222E699FD0047E828 /* usericon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = usericon.png; path = ../../../../.Trash/usericon.png; sourceTree = "<group>"; };
-		EB8BC3C322E699FD0047E828 /* btn_add_bank_and_save_275659.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = btn_add_bank_and_save_275659.png; path = ../../../btn_add_bank_and_save_275659.png; sourceTree = "<group>"; };
-		EB8BC3C422E699FD0047E828 /* about.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = about.png; path = ../../../about.png; sourceTree = "<group>"; };
-		EB8BC3C522E699FD0047E828 /* contactusicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = contactusicon.png; path = ../contactusicon.png; sourceTree = "<group>"; };
-		EB8BC3C622E699FD0047E828 /* images-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "images-4.png"; path = "../../../images-4.png"; sourceTree = "<group>"; };
-		EB8BC3C722E699FD0047E828 /* userlogin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = userlogin.png; path = ../../../userlogin.png; sourceTree = "<group>"; };
 		EB8BC3D622E69AA40047E828 /* aboutus.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = aboutus.html; sourceTree = "<group>"; };
 		EBC6255422D01928001C83B5 /* LostAndFoundApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LostAndFoundApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBC6255722D01928001C83B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -201,18 +201,18 @@
 		EBDFE1E122E699CF008455FE /* images */ = {
 			isa = PBXGroup;
 			children = (
-				EB8BC3C422E699FD0047E828 /* about.png */,
-				EB8BC3C322E699FD0047E828 /* btn_add_bank_and_save_275659.png */,
-				EB8BC3BF22E699FD0047E828 /* contact.png */,
-				EB8BC3C522E699FD0047E828 /* contactusicon.png */,
-				EB8BC3C122E699FD0047E828 /* icon-form-1.png */,
-				EB8BC3BB22E699FD0047E828 /* icon.png */,
-				EB8BC3C622E699FD0047E828 /* images-4.png */,
-				EB8BC3C022E699FD0047E828 /* loginIcon.jpg */,
-				EB8BC3BA22E699FD0047E828 /* logoL&F.jpg */,
-				EB8BC3BD22E699FD0047E828 /* password.png */,
-				EB8BC3C222E699FD0047E828 /* usericon.png */,
-				EB8BC3C722E699FD0047E828 /* userlogin.png */,
+				84BA9B0B22E6C83F00FB42AE /* icon-form-1.png */,
+				84BA9B0922E6C81F00FB42AE /* usericon.png */,
+				84BA9B1922E6C91700FB42AE /* loginIcon.png */,
+				84BA9B1722E6C90000FB42AE /* about.png */,
+				84BA9B1122E6C8B300FB42AE /* btn_add_bank_and_save_275659.png */,
+				84BA9B1522E6C8DF00FB42AE /* contactusicon.png */,
+				84BA9B1322E6C8CB00FB42AE /* contact.png */,
+				84BA9B0F22E6C87400FB42AE /* userlogin.png */,
+				84BA9B0D22E6C85C00FB42AE /* icon.png */,
+				84BA9B0522E6C7CB00FB42AE /* images-4.png */,
+				84BA9B0722E6C7EF00FB42AE /* password.png */,
+				84BA9B0322E6C79000FB42AE /* logoL&F.jpg */,
 			);
 			name = images;
 			path = ../../../../Downloads/sample/sample/images;
@@ -286,22 +286,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB8BC3D722E69AA40047E828 /* aboutus.html in Resources */,
-				EB8BC3D522E699FD0047E828 /* userlogin.png in Resources */,
-				EB8BC3C822E699FD0047E828 /* logoL&F.jpg in Resources */,
-				EB8BC3D022E699FD0047E828 /* usericon.png in Resources */,
 				EBC6256222D0192A001C83B5 /* LaunchScreen.storyboard in Resources */,
-				EB8BC3D322E699FD0047E828 /* contactusicon.png in Resources */,
-				EB8BC3CB22E699FD0047E828 /* password.png in Resources */,
+				84BA9B1022E6C87400FB42AE /* userlogin.png in Resources */,
+				84BA9B0C22E6C83F00FB42AE /* icon-form-1.png in Resources */,
 				EBC6255F22D0192A001C83B5 /* Assets.xcassets in Resources */,
-				EB8BC3CF22E699FD0047E828 /* icon-form-1.png in Resources */,
-				EB8BC3D222E699FD0047E828 /* about.png in Resources */,
-				EB8BC3D122E699FD0047E828 /* btn_add_bank_and_save_275659.png in Resources */,
-				EB8BC3CE22E699FD0047E828 /* loginIcon.jpg in Resources */,
-				EB8BC3D422E699FD0047E828 /* images-4.png in Resources */,
-				EB8BC3CD22E699FD0047E828 /* contact.png in Resources */,
-				EB8BC3C922E699FD0047E828 /* icon.png in Resources */,
+				84BA9B1222E6C8B300FB42AE /* btn_add_bank_and_save_275659.png in Resources */,
+				84BA9B0422E6C79100FB42AE /* logoL&F.jpg in Resources */,
+				84BA9B0622E6C7CB00FB42AE /* images-4.png in Resources */,
+				84BA9B0E22E6C85C00FB42AE /* icon.png in Resources */,
+				84BA9B0A22E6C82000FB42AE /* usericon.png in Resources */,
+				84BA9B0822E6C7EF00FB42AE /* password.png in Resources */,
 				EBC6255D22D01928001C83B5 /* Main.storyboard in Resources */,
+				84BA9B1822E6C90000FB42AE /* about.png in Resources */,
 				EBEF8F7222E394DA00E63840 /* LostItem.plist in Resources */,
+				84BA9B1A22E6C91700FB42AE /* loginIcon.png in Resources */,
+				84BA9B1622E6C8DF00FB42AE /* contactusicon.png in Resources */,
+				84BA9B1422E6C8CB00FB42AE /* contact.png in Resources */,
 				EB01EB9722DCF06E006DF4ED /* userInfo.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

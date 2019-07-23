@@ -13,7 +13,7 @@ class ShowAllFoundItemsViewController: UIViewController, UITableViewDelegate, UI
 
     @IBOutlet weak var tbl_FoundItems: UITableView!
     
-    var foundItemArray: [FoundItem]!
+    public static var foundItemArray: [FoundItem]!
     
     
     
@@ -27,26 +27,21 @@ class ShowAllFoundItemsViewController: UIViewController, UITableViewDelegate, UI
          self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background1")!);
 self.tbl_FoundItems.delegate = self
         self.tbl_FoundItems.dataSource = self
-        getFoundItemData()
+        self.tbl_FoundItems.reloadData()
+        //getFoundItemData()
         // Do any additional setup after loading the view.
     }
     
-    private func getFoundItemData()
-    {
-        foundItemArray = []
-        foundItemArray.append(FoundItem(fItemName: "key", fItemCat: "Personal", fItemDes: "shhsd", fItemDate: "dsds", fItemPlace: "Lambton College"))
-        foundItemArray.append(FoundItem(fItemName: "Bottel", fItemCat: "Home", fItemDes: "water blue bttel", fItemDate: "sfdss", fItemPlace: "Nanak House"))
-        
-    }
+    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.foundItemArray.count
+        return ShowAllFoundItemsViewController.foundItemArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let fItemCell = tableView.dequeueReusableCell(withIdentifier: "ShowFoundItemCell") as! ShowFoundItemTableViewCell
         
-        let foundItem = self.foundItemArray[indexPath.row]
+        let foundItem = ShowAllFoundItemsViewController.foundItemArray[indexPath.row]
     fItemCell.lbl_fItemName.text = foundItem.fItemName
         fItemCell.lbl_fItemCat.text = foundItem.fItemCat
         fItemCell.lbl_fItemDes.text = foundItem.fItemDes

@@ -18,6 +18,7 @@ class addLostItemViewController: UIViewController,UIImagePickerControllerDelegat
     @IBOutlet weak var txt_category: UITextField!
     
     @IBOutlet weak var txt_place: UITextField!
+    @IBOutlet weak var txt_PhoneNumber: UITextField!
     
     @IBOutlet weak var txt_dateLostItem: UITextField!
     @IBOutlet weak var txt_reward: UITextField!
@@ -44,7 +45,7 @@ class addLostItemViewController: UIViewController,UIImagePickerControllerDelegat
     var Response1: AnyObject!
 
     var category = ["Electronics", "Kitchen", "Clothes", "Accesories"]
-    
+    var categoryChosen : String = ""
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background1")!)
@@ -172,6 +173,14 @@ class addLostItemViewController: UIViewController,UIImagePickerControllerDelegat
     }
     
     
+    @IBAction func addItem(_ sender: Any)
+    {
+        ShowAllLostItemsViewController.LostItemArray.append(Item(ItemName: txt_itemName.text!, ItemDescription: txt_description.text!, ItemCat: categoryChosen, ItemReward: txt_reward.text!, ItemLostDate: rdate as Date, ItemImage: "purseImage" , ItemLostPlace: txt_place.text!, ItemLostContact: txt_PhoneNumber.text!))
+        self.dismiss(animated: true, completion: nil)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let showAllLostItemsVC = storyboard.instantiateViewController(withIdentifier: "AllLostItemVC") as! ShowAllLostItemsViewController
+        self.navigationController?.pushViewController(showAllLostItemsVC, animated: true)
+    }
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
@@ -189,12 +198,14 @@ class addLostItemViewController: UIViewController,UIImagePickerControllerDelegat
     
     func pickerView( pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
        txt_category.text = category[row]
+        categoryChosen = category[row]
         self.view.endEditing(false)
        
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
     txt_category.text = category[row]
+        categoryChosen = category[row]
     self.txt_category.resignFirstResponder()
 }
     

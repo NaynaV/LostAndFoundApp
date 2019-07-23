@@ -13,6 +13,7 @@ class addFoundItemViewController: UIViewController,UIImagePickerControllerDelega
 {
    
 
+    var chosenCategory : String = ""
    
     @IBOutlet weak var txt_itemCategory: UITextField!
     
@@ -61,9 +62,19 @@ class addFoundItemViewController: UIViewController,UIImagePickerControllerDelega
     
     func pickerView( pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         txt_itemCategory.text = category[row]
+        self.chosenCategory = category[row]
+        
+        
         self.view.endEditing(false)
         
+        
         //print(category[row])
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        txt_itemCategory.text = category[row]
+        self.chosenCategory = category[row]
+        self.txt_itemCategory.resignFirstResponder()
     }
     
     func showDatePicker(){
@@ -104,7 +115,13 @@ class addFoundItemViewController: UIViewController,UIImagePickerControllerDelega
         self.navigationController?.pushViewController(dashboardVC, animated: true)
     }
     
-    @IBAction func btn_saveClick(_ sender: UIBarButtonItem) {
+    @IBAction func btn_saveClick(_ sender: UIBarButtonItem)
+    {
+        ShowAllFoundItemsViewController.foundItemArray.append(FoundItem(fItemName: txt_itemName.text!, fItemCat: chosenCategory, fItemDes: txt_fItemHint.text!, fItemDate: txt_fItemDate.text!, fItemPlace: txt_fitemPlace.text!))
+        self.dismiss(animated: true, completion: nil)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let showAllFoundItemsVC = storyboard.instantiateViewController(withIdentifier: "ShowFoundItemVC") as! ShowAllFoundItemsViewController
+        self.navigationController?.pushViewController(showAllFoundItemsVC, animated: true)
     }
     
     
