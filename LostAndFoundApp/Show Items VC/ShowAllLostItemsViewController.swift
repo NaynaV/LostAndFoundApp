@@ -57,7 +57,7 @@ class ShowAllLostItemsViewController: UIViewController, UITableViewDelegate, UIT
         cell.lbl_itemLostdate.text = "\(lostItem.ItemLostDate)"
         cell.lbl_itemDes.text = "\(lostItem.ItemDescription)"
         cell.lbl_itemLostPlace.text = "\(lostItem.ItemLostPlace)"
-        cell.lbl_itemImage.image = UIImage(named: (lostItem.ItemImage))
+        cell.lbl_itemImage.image = lostItem.ItemImage
         cell.lbl_itemReward.text = "\(lostItem.ItemReward)"
         cell.lbl_itemCat.text = "\(lostItem.ItemCat)"
        

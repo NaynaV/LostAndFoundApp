@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 /*
 enum ItemType {
     case Lost , Found
@@ -58,7 +59,7 @@ struct Item {
     var ItemCat : String
     var ItemReward : String
     var ItemLostDate : Date
-    var ItemImage : String
+    var ItemImage : UIImage
     var ItemLostPlace : String
     var ItemLostContact : String
 }

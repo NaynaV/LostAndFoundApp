@@ -9,9 +9,11 @@
 import UIKit
 
 class MenuViewController: UIViewController {
-
+ let userDefault = UserDefaults.standard
     @IBOutlet weak var txtfld1: UITextField!
   
+    @IBOutlet weak var logoutBT: UIBarButtonItem!
+    
     @IBOutlet weak var menuview: UIView!
     
     
@@ -86,5 +88,15 @@ class MenuViewController: UIViewController {
         self.present(nextVC, animated: true, completion: nil)
     }
     
+    @IBAction func goLogoutBT(_ sender: UIBarButtonItem) {
+        
+        userDefault.set("", forKey: "emailID")
+        userDefault.set("", forKey: "password")
+        
+        let myStoryBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let nextVC = myStoryBoard.instantiateViewController(withIdentifier: "loginVC") as! LoginViewController
+        self.present(nextVC, animated: true, completion: nil)
+        
+    }
     
 }

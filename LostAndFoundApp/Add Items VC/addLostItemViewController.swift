@@ -175,7 +175,7 @@ class addLostItemViewController: UIViewController,UIImagePickerControllerDelegat
     
     @IBAction func addItem(_ sender: Any)
     {
-        ShowAllLostItemsViewController.LostItemArray.append(Item(ItemName: txt_itemName.text!, ItemDescription: txt_description.text!, ItemCat: categoryChosen, ItemReward: txt_reward.text!, ItemLostDate: rdate as Date, ItemImage: "purseImage" , ItemLostPlace: txt_place.text!, ItemLostContact: txt_PhoneNumber.text!))
+        ShowAllLostItemsViewController.LostItemArray.append(Item(ItemName: txt_itemName.text!, ItemDescription: txt_description.text!, ItemCat: categoryChosen, ItemReward: txt_reward.text!, ItemLostDate: rdate as Date, ItemImage: self.img_item.image! , ItemLostPlace: txt_place.text!, ItemLostContact: txt_PhoneNumber.text!))
         self.dismiss(animated: true, completion: nil)
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let showAllLostItemsVC = storyboard.instantiateViewController(withIdentifier: "AllLostItemVC") as! ShowAllLostItemsViewController

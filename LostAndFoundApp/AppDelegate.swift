@@ -46,9 +46,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func getLostItemData()
     {
         ShowAllLostItemsViewController.LostItemArray = []
-        ShowAllLostItemsViewController.LostItemArray.append(Item(ItemName: "Iphone", ItemDescription: "Iphone ^s roseGold", ItemCat : "Electronics", ItemReward: "$40", ItemLostDate: Date(), ItemImage: "keyImage", ItemLostPlace: "graydon hall", ItemLostContact: "236900899"))
+        ShowAllLostItemsViewController.LostItemArray.append(Item(ItemName: "Iphone", ItemDescription: "Iphone ^s roseGold", ItemCat : "Electronics", ItemReward: "$40", ItemLostDate: Date(), ItemImage: UIImage(imageLiteralResourceName: "keyImage"), ItemLostPlace: "graydon hall", ItemLostContact: "236900899"))
         
-        ShowAllLostItemsViewController.LostItemArray.append(Item(ItemName: "cap", ItemDescription: "Nike Cap", ItemCat: "Clothes", ItemReward: "$10", ItemLostDate: Date(), ItemImage: "purseImage", ItemLostPlace: "graydon hall", ItemLostContact: "236900899"))
+        ShowAllLostItemsViewController.LostItemArray.append(Item(ItemName: "cap", ItemDescription: "Nike Cap", ItemCat: "Clothes", ItemReward: "$10", ItemLostDate: Date(), ItemImage: UIImage(imageLiteralResourceName: "purseImage"), ItemLostPlace: "graydon hall", ItemLostContact: "236900899"))
     }
     func getFoundItemData()
     {

@@ -932,6 +932,11 @@
                                                 <action selector="btn_menuClicked:" destination="84V-Jz-ROZ" id="jys-wq-nFC"/>
                                             </connections>
                                         </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Logout" id="7Y3-KH-x1N">
+                                            <connections>
+                                                <action selector="goLogoutBT:" destination="84V-Jz-ROZ" id="bdK-04-uCB"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -1069,6 +1074,7 @@
                         <viewLayoutGuide key="safeArea" id="N4N-Tk-j2W"/>
                     </view>
                     <connections>
+                        <outlet property="logoutBT" destination="7Y3-KH-x1N" id="7Xo-1c-C0w"/>
                         <outlet property="menuview" destination="wZe-Uu-xZh" id="3gJ-JV-NAM"/>
                     </connections>
                 </viewController>
@@ -1090,6 +1096,6 @@
         <image name="password.png" width="320" height="320"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="gqh-3v-wx9"/>
+        <segue reference="DTZ-JS-NXO"/>
     </inferredMetricsTieBreakers>
 </document>
