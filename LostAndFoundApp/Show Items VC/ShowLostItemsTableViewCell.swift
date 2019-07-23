@@ -11,7 +11,7 @@ import UIKit
 class ShowLostItemsTableViewCell: UITableViewCell {
 
     @IBOutlet weak var lbl_itemId: UILabel!
-    
+    //
     @IBOutlet weak var lbl_ItemName: UILabel!
     
     @IBOutlet weak var lbl_itemType: UILabel!
