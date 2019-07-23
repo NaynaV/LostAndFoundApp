@@ -34,7 +34,7 @@ class addLostItemViewController: UIViewController,UIImagePickerControllerDelegat
     var img_dataDic = NSMutableDictionary()
     var parameterDic = NSMutableDictionary()
     var img_data = NSData()
-      //var category = ["General", "Electronic", "Materialistic"]
+     
     
     let datePicker = UIDatePicker()
     // var datePicker = UIDatePicker()

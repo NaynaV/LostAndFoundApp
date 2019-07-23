@@ -10,7 +10,7 @@ import UIKit
 
 class ShowAllLostItemsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    //var students = [Student]()
+   
 
 
     public static var LostItemArray = [Item]()
@@ -42,7 +42,7 @@ class ShowAllLostItemsViewController: UIViewController, UITableViewDelegate, UIT
     
    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
    {
-       //   return self.students.count
+      
     return ShowAllLostItemsViewController.LostItemArray.count
     }
     

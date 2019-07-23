@@ -68,7 +68,7 @@ class addFoundItemViewController: UIViewController,UIImagePickerControllerDelega
         self.view.endEditing(false)
         
         
-        //print(category[row])
+        
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
